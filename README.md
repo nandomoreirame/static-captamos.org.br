@@ -1,0 +1,1 @@
+# Static captamos.org.br
