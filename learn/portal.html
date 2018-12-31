@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<link rel="icon" href="../favicon.png">
+
+		<title>Captamos</title>
+
+		<meta property="og:url"           content="/learn/portal" />
+		<meta property="og:type"          content="website" />
+		<meta property="og:locale" content="es_ES" />
+		<meta property="og:site_name" content="Captamos" />
+		<meta property="og:title"         content="" />
+		<meta property="og:description"   content="" />
+		<meta property="og:image"         content="" />
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<!--<meta name="twitter:site" content="@cuidalaslolas" />-->
+		<meta name="twitter:title" content="" />
+		<meta name="twitter:description" content="" />
+		<meta name="twitter:image" content="" />
+		<meta name="twitter:image:src" content="">
+		<meta name="twitter:url" content="/learn/portal" />
+		<meta name="twitter:domain" content="/" />
+
+		<!--
+		<link href="/assets/css/fonts.css" rel="stylesheet">
+		-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700|Roboto:400,500,700' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+		<!-- Plugins -->
+		<link rel="stylesheet" href="../assets/vendor/malihu/jquery.mCustomScrollbar.min.css" />
+		<!-- Main CSS -->
+		<link href="../assets/css/styles.css" rel="stylesheet">
+		<link href="../assets/css/custom.css" rel="stylesheet">
+		<link href="../assets/css/bootstrap-datetimepicker.css" rel="stylesheet">
+		<link href="../assets/css/theme.css" rel="stylesheet">
+
+		<link type="text/css" rel="stylesheet" href="../assets/css/plugins/owl.carousel.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="../assets/css/plugins/swipebox.min.css" media="screen" />
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<script src="https://apis.google.com/js/client.js"> </script>
+		<script>
+		  var showlogin = false;
+
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-71665848-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+
+		<script>
+		var tip_form = false;
+		var is_tagging = false;
+		</script>
+
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-MLMV6DL');</script>
+		<!-- End Google Tag Manager -->
+
+	</head>
+
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLMV6DL"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
+
+		<script>
+		  window.fbAsyncInit = function() {
+		    FB.init({
+		      appId      : '159303931146435',
+		      xfbml      : false,
+		      version    : 'v2.5',
+		      cookie	 : true
+		    });
+		  };
+
+		  (function(d, s, id){
+		     var js, fjs = d.getElementsByTagName(s)[0];
+		     if (d.getElementById(id)) {return;}
+		     js = d.createElement(s); js.id = id;
+		     js.src = "//connect.facebook.net/pt_BR/sdk.js";
+		     fjs.parentNode.insertBefore(js, fjs);
+		   }(document, 'script', 'facebook-jssdk'));
+		</script>
+
+		<!-- Fixed navbar -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="../index.html"><img src="../assets/images/twh-logo.png"></a>
+				</div>
+
+				<div id="navbar">
+					<!--
+					<form class="navbar-form navbar-form-search navbar-left" role="search" method="get" action="#">
+					-->
+					<form class="navbar-form navbar-form-search navbar-left" role="search" method="get" action="/search">
+						<div class="input-group has-feedback">
+					      	<input type="text" class="form-control" aria-label="..." id="keywords" name="q" placeholder="Buscar..." value="">
+							<i class="captamos-icons search"></i>
+					    </div>
+					</form>
+
+					<ul class="nav navbar-nav navbar-right notifications">
+												<li class="me">
+							<a href="portal.html#" class="reqlogin">Login</a>
+						</li>
+
+					</ul>
+
+				</div><!--/.nav-collapse -->
+			</div>
+
+			<div class="container">
+				<div class="col-xs-16">
+					<nav id="area-menu" class="clearfix">
+						<ul class="list-inline ">
+							<li class=""><div><span><a href="../news/portal.html" class="">INSPIRE-SE</a></span></div><span class="u"></span></li>
+							<li class="active"><div><span><a href="portal.html" class="">APRENDA</a></span></div><span class="u"></span></li>
+							<li class=""><div><span><a href="../collab/feed.html" class="">COMPARTILHE</a></span></div><span class="u"></span></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+		</nav>
+
+		<div class="container">
+
+			<div class="col-xs-16">
+				<div class="main-content">
+
+					<nav id="workhub-menu" class="learn">
+						<ul class="list-inline notifications">
+							<li class="active"><div><span><a href="portal.html">Destaques</a></span></div></li>
+							<li class=""><div><span><a href="programs.html" class="">Catálogo de Cursos</a></span></div></li>
+																				</ul>
+					</nav>
+
+					<div class="row">
+	<div class="col-xs-12 breadcrumbs-learn padded">
+		<div class="breadcrumbs">
+			<ol class="breadcrumb">
+			  <li><a href="portal.html" class="green">Aprenda</a></li>
+			  <li><a href="portal.html" class="green">Destaques</a></li>
+			</ol>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-14 col-xs-offset-1">
+				<!--DESTACADOS-->
+				<div id="destacados" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+								<li data-target="#destacados" data-slide-to="0" class="active"></li>
+								<li data-target="#destacados" data-slide-to="1" class=""></li>
+								<li data-target="#destacados" data-slide-to="2" class=""></li>
+							</ol>
+			<div class="carousel-inner" role="listbox">
+								<div class="item active">
+					<div class="row">
+		<div class="col-xs-8">
+	   	<a href="programs/p/10332/5_etapas_para_plano.html" class="">
+			<img src="../data/slides/PImMEzsUxSYWg/500x300_news4.jpg" class="img-responsive" />
+		</a>
+	</div>
+		<div class="col-xs-8 slideText">
+		<a href="portal.html#"><span class="category">Planos de Captação</span></a>
+		<h1><a href="programs/p/10332/5_etapas_para_plano.html" class="">5 Etapas para um Plano de Captação de Recursos</a></h1>
+		<p>Simples e prático, comece já o seu!</p>
+		<a class="link " href="programs/p/10332/5_etapas_para_plano.html">SAIBA MAIS</a>
+	</div>
+</div>
+				</div>
+								<div class="item ">
+					<div class="row">
+		<div class="col-xs-8">
+	   	<a href="programs/p/4762/Captacao_com_Editais.html" class="">
+			<img src="../data/slides/GyTtiHexmDPdr/500x300_CaptaEditaisAprenda.jpeg" class="img-responsive" />
+		</a>
+	</div>
+		<div class="col-xs-8 slideText">
+		<a href="portal.html#"><span class="category">Fontes e técnicas</span></a>
+		<h1><a href="programs/p/4762/Captacao_com_Editais.html" class="">Captação com Editais</a></h1>
+		<p>Tudo o que você precisa saber para captar com chamadas públicas.</p>
+		<a class="link " href="programs/p/4762/Captacao_com_Editais.html">SAIBA MAIS</a>
+	</div>
+</div>
+				</div>
+								<div class="item ">
+					<div class="row">
+		<div class="col-xs-8">
+	   	<a href="programs/p/7151/captacao_online.html" class="">
+			<img src="../data/slides/fSDOWgzowLAyE/500x300_cursoCaptacaoOnline_aprenda.jpeg" class="img-responsive" />
+		</a>
+	</div>
+		<div class="col-xs-8 slideText">
+		<a href="portal.html#"><span class="category">Fontes e técnicas</span></a>
+		<h1><a href="programs/p/7151/captacao_online.html" class="">Captação online</a></h1>
+		<p>Aprenda a utilizar o potencial da internet para captar recursos!</p>
+		<a class="link " href="programs/p/7151/captacao_online.html">SAIBA MAIS</a>
+	</div>
+</div>
+				</div>
+							</div>
+			<!--
+			<a class="left carousel-control" href="#destacados" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#destacados" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+			-->
+		</div>
+				<!--FIN CAROUSEL-->
+		<!-- CURRICULA -->
+				<!-- FIN CURRICULA -->
+
+		<br/>
+
+		<!-- PLANES Y CURSOS -->
+		<div class="row mt20">
+			<div class="col-xs-16">
+				<div class="box clearfix" id="planes_y_cursos">
+					<div class="head clearfix">
+						<h3 class="hsection text-right clearfix">
+							<div class="pull-left">
+								Planos e cursos recomendados
+								<i class="captamos-icons inline cursos"></i>
+							</div>
+							<a href="programs.html" class="pull-right seeall">Ver todos <i class="captamos-icons inline ver-todas"></i></a>
+						</h3>
+					</div>
+					<div class="body">
+						<div class="row">
+							<div class="col-xs-16">
+
+																<div class="col-xs-4 curso">
+
+									<a href="programs/p/13086/captacao_premioseditais.html" class="">
+										<img src="../data/programs/13086/240x165_outra.jpg" alt="" class="img-responsive"/>
+									</a>
+									<a href="portal.html#">Fontes e técnicas</a>
+									<div class="ctitle">
+										<a href="programs/p/13086/captacao_premioseditais.html" class="orange ">Captação via Prêmios e Editais Socioambientais</a>
+									</div>
+									<div class="csubtitle">
+										Vanessa Prata, Sócia-fundadora da Ponte a Ponte, ensina como captação recursos via prêmios e editais da área socioambiental.									</div>
+
+									<!--
+									<div class="box-user">
+										<div class="media">
+											<div class="media-left">
+												<a href="http://localhost/profile/u/1000">
+													<img src="http://localhost/media/get/55b8cce799749" class="media-object img-circle">
+												</a>
+											</div>
+											<div class="media-body">
+												<h4 class="media-heading">
+													<a href="http://localhost/profile/u/1000">Damian Lobalzo</a>
+												</h4>
+												<p class="stars">
+													<a href="#" rel="s1"></a>
+													<a href="#" rel="s2"></a>
+													<a href="#" rel="s3"></a>
+													<a href="#" rel="s4"></a>
+													<a href="#" rel="s5"></a>
+												</p>
+												<p>Un curso claro y con todos los contenidos necesarios para dominar el tema en cuestión.</p>
+											</div>
+										</div>
+									</div>
+									-->
+								</div>
+																<div class="col-xs-4 curso">
+
+									<a href="programs/p/10332/5_etapas_para_plano.html" class="">
+										<img src="../data/programs/10332/240x165_bigstock--128725745.jpg" alt="" class="img-responsive"/>
+									</a>
+									<a href="portal.html#">Planos de Captação</a>
+									<div class="ctitle">
+										<a href="programs/p/10332/5_etapas_para_plano.html" class="orange ">5 Etapas para um Plano de Captação de Recursos</a>
+									</div>
+									<div class="csubtitle">
+										Aprenda as Cinco Principais Etapas para criar um Plano de Captação de Recursos.									</div>
+
+									<!--
+									<div class="box-user">
+										<div class="media">
+											<div class="media-left">
+												<a href="http://localhost/profile/u/1000">
+													<img src="http://localhost/media/get/55b8cce799749" class="media-object img-circle">
+												</a>
+											</div>
+											<div class="media-body">
+												<h4 class="media-heading">
+													<a href="http://localhost/profile/u/1000">Damian Lobalzo</a>
+												</h4>
+												<p class="stars">
+													<a href="#" rel="s1"></a>
+													<a href="#" rel="s2"></a>
+													<a href="#" rel="s3"></a>
+													<a href="#" rel="s4"></a>
+													<a href="#" rel="s5"></a>
+												</p>
+												<p>Un curso claro y con todos los contenidos necesarios para dominar el tema en cuestión.</p>
+											</div>
+										</div>
+									</div>
+									-->
+								</div>
+																<div class="col-xs-4 curso">
+
+									<a href="programs/p/9115/teoria_u.html" class="">
+										<img src="../data/programs/9115/240x165_bigstock-Internet-concept-Social-netwo-50436602.jpg" alt="" class="img-responsive"/>
+									</a>
+									<a href="portal.html#">Gestão</a>
+									<div class="ctitle">
+										<a href="programs/p/9115/teoria_u.html" class="orange ">Teoria U</a>
+									</div>
+									<div class="csubtitle">
+										Descubra como a Teoria U pode revolucionar a sua captação e gestão organizacional, com Thiago Godoy Nascimento.									</div>
+
+									<!--
+									<div class="box-user">
+										<div class="media">
+											<div class="media-left">
+												<a href="http://localhost/profile/u/1000">
+													<img src="http://localhost/media/get/55b8cce799749" class="media-object img-circle">
+												</a>
+											</div>
+											<div class="media-body">
+												<h4 class="media-heading">
+													<a href="http://localhost/profile/u/1000">Damian Lobalzo</a>
+												</h4>
+												<p class="stars">
+													<a href="#" rel="s1"></a>
+													<a href="#" rel="s2"></a>
+													<a href="#" rel="s3"></a>
+													<a href="#" rel="s4"></a>
+													<a href="#" rel="s5"></a>
+												</p>
+												<p>Un curso claro y con todos los contenidos necesarios para dominar el tema en cuestión.</p>
+											</div>
+										</div>
+									</div>
+									-->
+								</div>
+																<div class="col-xs-4 curso">
+
+									<a href="programs/p/7816/google_ad_grants_como_instrumento_de_captacao.html" class="">
+										<img src="../data/programs/7816/240x165_cursoGoogleAdGrants.png" alt="" class="img-responsive"/>
+									</a>
+									<a href="portal.html#">Comunicação e relacionamento</a>
+									<div class="ctitle">
+										<a href="programs/p/7816/google_ad_grants_como_instrumento_de_captacao.html" class="orange ">Google Ad Grants como instrumento de Captação</a>
+									</div>
+									<div class="csubtitle">
+										Elaine Diniz mostra como as organizações podem utilizar a principal ferramenta de publicidade online para fortalecer a Captação de Recursos									</div>
+
+									<!--
+									<div class="box-user">
+										<div class="media">
+											<div class="media-left">
+												<a href="http://localhost/profile/u/1000">
+													<img src="http://localhost/media/get/55b8cce799749" class="media-object img-circle">
+												</a>
+											</div>
+											<div class="media-body">
+												<h4 class="media-heading">
+													<a href="http://localhost/profile/u/1000">Damian Lobalzo</a>
+												</h4>
+												<p class="stars">
+													<a href="#" rel="s1"></a>
+													<a href="#" rel="s2"></a>
+													<a href="#" rel="s3"></a>
+													<a href="#" rel="s4"></a>
+													<a href="#" rel="s5"></a>
+												</p>
+												<p>Un curso claro y con todos los contenidos necesarios para dominar el tema en cuestión.</p>
+											</div>
+										</div>
+									</div>
+									-->
+								</div>
+																							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN PLANES Y CURSOS -->
+
+		<!-- WEBINARS -->
+		<div class="row mt20">
+			<!--
+			<div class="col-xs-8">
+				<div class="box" id="webinars">
+					<div class="head clearfix">
+						<h3 class="pull-left">Webinars <i class="captamos-icons inline webinars"></i></h3>
+						<a href="#" class="pull-right seeall">Ver todos <i class="captamos-icons inline ver-todas"></i></a>
+					</div>
+					<div class="body">
+						<div class="col-xs-16 curso">
+							<div class="col-xs-6">
+								<img class="img-responsive" src="/assets/images/webinar-img.png" alt="" />
+							</div>
+							<div class="col-xs-10">
+								<a href="#">Gestión y Finanzas</a>
+								<div class="ctitle">
+									El nuevo mantra del retail: Servicio, Servicio, Servicio!
+								</div>
+								<p class="stars actives4">
+									<a href="#" rel="s1"></a>
+									<a href="#" rel="s2"></a>
+									<a href="#" rel="s3"></a>
+									<a href="#" rel="s4"></a>
+									<a href="#" rel="s5"></a>
+								</p>
+							</div>
+							<div class="col-xs-16">
+								<div class="csubtitle">
+									En este curso de capacitación aprenderás a liderar y coordinar equipos de trabajo y proyectos que suceda en forma simultánea.
+									En este curso de capacitación aprenderás a liderar y coordinar equipos de trabajo y proyectos que suceda en forma simultánea.
+									<br><br>
+									En este curso de capacitación aprenderás a liderar y coordinar equipos de trabajo y proyectos que suceda en forma simultánea.
+								</div>
+
+								<div class="celeste">
+									<p><b>CUÁNDO:</b> Martes, 6 de Octubre, 11:00 AM</p>
+									<p><b>DURACIÓN:</b> 45 minutos</p>
+									<p class="btns">
+										<button type="button" class="btn btn-xs btn-primary ladda-button" data-style="expand-left"><span class="ladda-label">REGISTRARME</span></button>
+										<a href="#">COMPARTIR</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			-->
+			<!-- FIN WEBINARS -->
+
+			<!-- TIPS -->
+			<!--
+			<div class="col-xs-8">
+				<div class="box" id="tips">
+					<div class="head clearfix">
+						<h3 class="pull-left">Dicas <i class="captamos-icons inline tips"></i></h3>
+						<a href="#" class="pull-right seeall">Ver todos <i class="captamos-icons inline ver-todas"></i></a>
+					</div>
+					<div class="body">
+						<div class="col-xs-16 tip">
+							<div class="col-xs-6">
+								<img class="img-responsive" src="/assets/images/tip1.png" alt="" />
+							</div>
+							<div class="col-xs-10">
+								<div class="ctitle">
+									10 tips indispensables para mejorar tu exhibición
+								</div>
+								<div class="author">
+									<p>por <a href="#">Maxi Rodriguez</a></p>
+								</div>
+								<div class="col-xs-16">
+									<div class="col-xs-6 rate">
+										<p class="stars">
+											<a href="#" rel="s1"></a>
+											<a href="#" rel="s2"></a>
+											<a href="#" rel="s3"></a>
+											<a href="#" rel="s4"></a>
+											<a href="#" rel="s5"></a>
+										</p>
+									</div>
+									<div class="col-xs-10 avalie text-left">
+										Avalie esta dica
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-16 tip">
+							<div class="col-xs-6">
+								<img class="img-responsive" src="/assets/images/tip2.png" alt="" />
+							</div>
+							<div class="col-xs-10">
+								<div class="ctitle">
+									Consejos para mantener motivado a tu equipo
+								</div>
+								<div class="author">
+									<p>por <a href="#">Maxi Rodriguez</a></p>
+								</div>
+								<div class="col-xs-16">
+									<div class="col-xs-6 rate">
+										<p class="stars">
+											<a href="#" rel="s1"></a>
+											<a href="#" rel="s2"></a>
+											<a href="#" rel="s3"></a>
+											<a href="#" rel="s4"></a>
+											<a href="#" rel="s5"></a>
+										</p>
+									</div>
+									<div class="col-xs-10 avalie text-left">
+										Avalie esta dica
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-16 tip">
+							<div class="col-xs-6">
+								<img class="img-responsive" src="/assets/images/tip3.png" alt="" />
+							</div>
+							<div class="col-xs-10">
+								<div class="ctitle">
+									10 consejos de líderes para triunfar en los negocios en 2016
+								</div>
+								<div class="author">
+									<p>por <a href="#">Maxi Rodriguez</a></p>
+								</div>
+								<div class="col-xs-16">
+									<div class="col-xs-6 rate">
+										<p class="stars">
+											<a href="#" rel="s1"></a>
+											<a href="#" rel="s2"></a>
+											<a href="#" rel="s3"></a>
+											<a href="#" rel="s4"></a>
+											<a href="#" rel="s5"></a>
+										</p>
+									</div>
+									<div class="col-xs-10 avalie text-left">
+										Avalie esta dica
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			-->
+		</div>
+		<!-- FIN TIPS -->
+
+	</div>
+</div>
+
+									</div>
+			</div>
+
+			<div class="col-xs-1" id="chatContacts">
+			</div>
+
+		</div>
+
+		<footer>
+			<div class="container">
+				<div class="col-xs-2">
+					<a class="navbar-brand" href="portal.html#">
+						<img src="../assets/images/twh-logo.png" class="img-responsive">
+					</a>
+					<ul class="list-unstyled ul-redes">
+						<li><a href="https://www.facebook.com/captamosbr" target="_blank"><img src="../assets/images/ico-fb.png" alt=""></a></li>
+						<li><a href="https://www.twitter.com/captamosbr" target="_blank"><img src="../assets/images/ico-tw.png" alt=""></a></li>
+					</ul>
+				</div>
+				<div class="col-xs-offset-1 col-xs-3 col">
+					<p>INSPIRE-SE</p>
+					<ul class="list-unstyled">
+						<li><a href="../news/tendencias.html">Novidades e Tendências</a></li>
+						<li><a href="../news/cases.html">Histórias e Cases</a></li>
+						<li><a href="../news/articles.html">Artigos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-3 col">
+					<p>APRENDA</p>
+					<ul class="list-unstyled">
+						<li><a href="programs.html">Cursos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-3 col">
+					<p>COMPARTILHE</p>
+					<ul class="list-unstyled">
+						<li><a href="../collab/feed.html">Feed</a></li>
+						<li><a href="../collab/questions.html">Perguntas e Respostas</a></li>
+						<li><a href="../collab/tips.html">Dicas</a></li>
+						<li><a href="../collab/files.html">Arquivos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-3 col">
+					<p>SOBRE NÓS</p>
+					<ul class="list-unstyled">
+						<li><a href="../sobrenos.html">Sobre nós</a></li>
+						<li><a href="portal.html#" class="lnkContacto">Contato</a></li>
+						<li><a href="../faq.html">Perguntas Frequentes</a></li>
+						<li><a href="../termos.html">Termos e Condições de Uso</a></li>
+						<li><a href="https://www.facebook.com/captamosbr" target="_blank">Facebook</a></li>
+						<li><a href="https://www.twitter.com/captamosbr" target="_blank">Twitter</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+
+
+		<script>var current_section = "";</script>
+
+		<!-- -->
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/bootstrap.min.js"></script>
+		<!-- Plugins -->
+		<script src="../assets/vendor/malihu/jquery.mCustomScrollbar.min.js"></script>
+		<!--  -->
+		<script>
+		var baseURL = '/';
+		var currentURL = '/learn/portal';
+		</script>
+		<script src="../assets/js/plugins/jquery.elastic.js"></script>
+		<script src="../assets/js/plugins/jquery.events.input.js"></script>
+		<script src="../assets/js/plugins.js"></script>
+		<script src="../assets/js/moment.js"></script>
+		<script src="../assets/js/bootstrap-datetimepicker.js"></script>
+		<script src="../assets/js/plugins/jquery.scrollto.min.js"></script>
+		<script src="../assets/js/locales/pt-br.js"></script>
+		<script src="../assets/js/bootbox.min.js"></script>
+		<script>
+		var lang = new Array();
+		lang['Cambiar imagen de perfil'] = 'Trocar imagem de perfil';
+		lang['Cambiar imagen de portada'] = 'Trocar imagem de capa';
+		var reqlogin = 'reqlogin';
+
+		$(document).ready(function(){
+
+		});
+		</script>
+
+		<script src="../assets/js/plugins/jMentions.min.js"></script>
+
+		<script type="text/javascript" src="../assets/js/plugins/owl.carousel.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="../assets/js/plugins/jquery.swipebox.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="../assets/js/modules/learn/dom.js" charset="UTF-8"></script>
+<script type="text/javascript" src="../assets/js/modules/learn/programs.js" charset="UTF-8"></script>
+
+		<script src="../assets/js/main.js"></script>
+
+		<a href="portal.html#" class="restorePass" data-code="" style="display:none;"></a>
+
+
+		<script>
+		  window.addEventListener('load', function() {
+			jQuery('body').on('click', ' .row .col-xs-16 a.btn-login:contains("entrar")', function() {
+			  jQuery('body').append('<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/842694596/?label=WqO-CLPhhXQQxP_pkQM&amp;guid=ON&amp;script=0"/>');
+			})
+		  })
+
+		</script>
+
+		<script>
+		  window.addEventListener('load', function() {
+			jQuery('body').on('click', ' .row .col-xs-16 a.btn-signup:contains("criar uma conta")', function() { jQuery('body').append('<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/842694596/?label=WqO-CLPhhXQQxP_pkQM&amp;guid=ON&amp;script=0"/>');
+			})
+		  })
+
+		</script>
+
+	</body>
+</html>

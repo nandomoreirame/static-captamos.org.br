@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<link rel="icon" href="favicon.png">
+
+		<title>Captamos</title>
+
+		<meta property="og:url"           content="/" />
+		<meta property="og:type"          content="website" />
+		<meta property="og:locale" content="es_ES" />
+		<meta property="og:site_name" content="Captamos" />
+		<meta property="og:title"         content="" />
+		<meta property="og:description"   content="" />
+		<meta property="og:image"         content="" />
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<!--<meta name="twitter:site" content="@cuidalaslolas" />-->
+		<meta name="twitter:title" content="" />
+		<meta name="twitter:description" content="" />
+		<meta name="twitter:image" content="" />
+		<meta name="twitter:image:src" content="">
+		<meta name="twitter:url" content="/" />
+		<meta name="twitter:domain" content="/" />
+
+		<!--
+		<link href="/assets/css/fonts.css" rel="stylesheet">
+		-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700|Roboto:400,500,700' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+		<!-- Plugins -->
+		<link rel="stylesheet" href="assets/vendor/malihu/jquery.mCustomScrollbar.min.css" />
+		<!-- Main CSS -->
+		<link href="assets/css/styles.css" rel="stylesheet">
+		<link href="assets/css/custom.css" rel="stylesheet">
+		<link href="assets/css/bootstrap-datetimepicker.css" rel="stylesheet">
+		<link href="assets/css/theme.css" rel="stylesheet">
+
+		<link type="text/css" rel="stylesheet" href="assets/css/plugins/owl.carousel.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="assets/css/plugins/swipebox.min.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="assets/css/plugins/owl.carousel.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="assets/css/plugins/jquery-ui.css" media="screen" />
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<script src="https://apis.google.com/js/client.js"> </script>
+		<script>
+		  var showlogin = false;
+
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-71665848-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+
+		<script>
+		var tip_form = false;
+		var is_tagging = false;
+		</script>
+
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-MLMV6DL');</script>
+		<!-- End Google Tag Manager -->
+
+	</head>
+
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLMV6DL"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
+
+		<script>
+		  window.fbAsyncInit = function() {
+		    FB.init({
+		      appId      : '159303931146435',
+		      xfbml      : false,
+		      version    : 'v2.5',
+		      cookie	 : true
+		    });
+		  };
+
+		  (function(d, s, id){
+		     var js, fjs = d.getElementsByTagName(s)[0];
+		     if (d.getElementById(id)) {return;}
+		     js = d.createElement(s); js.id = id;
+		     js.src = "//connect.facebook.net/pt_BR/sdk.js";
+		     fjs.parentNode.insertBefore(js, fjs);
+		   }(document, 'script', 'facebook-jssdk'));
+		</script>
+
+		<!-- Fixed navbar -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html"><img src="assets/images/twh-logo.png"></a>
+				</div>
+
+				<div id="navbar">
+					<!--
+					<form class="navbar-form navbar-form-search navbar-left" role="search" method="get" action="#">
+					-->
+					<form class="navbar-form navbar-form-search navbar-left" role="search" method="get" action="/search">
+						<div class="input-group has-feedback">
+					      	<input type="text" class="form-control" aria-label="..." id="keywords" name="q" placeholder="Buscar..." value="">
+							<i class="captamos-icons search"></i>
+					    </div>
+					</form>
+
+					<ul class="nav navbar-nav navbar-right notifications">
+												<li class="me">
+							<a href="index.html#" class="reqlogin">Login</a>
+						</li>
+
+					</ul>
+
+				</div><!--/.nav-collapse -->
+			</div>
+
+			<div class="container">
+				<div class="col-xs-16">
+					<nav id="area-menu" class="clearfix">
+						<ul class="list-inline ">
+							<li class=""><div><span><a href="news/portal.html" class="">INSPIRE-SE</a></span></div><span class="u"></span></li>
+							<li class=""><div><span><a href="learn/portal.html" class="">APRENDA</a></span></div><span class="u"></span></li>
+							<li class=""><div><span><a href="collab/feed.html" class="">COMPARTILHE</a></span></div><span class="u"></span></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+		</nav>
+
+		<div class="container container-home">
+
+			<div class="col-xs-16">
+
+				<div id="slider-home">
+				<!--DESTACADOS-->
+										<div id="destacados" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+														<li data-target="#destacados" data-slide-to="0" class="active"></li>
+														<li data-target="#destacados" data-slide-to="1" class=""></li>
+														<li data-target="#destacados" data-slide-to="2" class=""></li>
+													</ol>
+						<div class="carousel-inner" role="listbox">
+														<div class="item active">
+								<div class="row" style="background:url(data/slides/eKpajtTlxArPD/banner_HOME_captamos19.png); background-size:100%; height:390px;">
+	<div class="col-xs-8 col-xs-offset-8 slideText bgslidecontent">
+		<h1><a href="news/15000/veja-como-usar-a-lei-rouanet-para-financiar-projetos-da-sua-organizao.html" class="">Veja como usar a Lei Rouanet para financiar projetos da sua OSC</a></h1>
+		<p>Conversamos com a Vaga Lume!</p>
+				<a href="news/15000/veja-como-usar-a-lei-rouanet-para-financiar-projetos-da-sua-organizao.html" class="cta ">SAIBA MAIS</a>
+			</div>
+</div>
+
+							</div>
+														<div class="item ">
+								<div class="row" style="background:url(data/slides/cGjuwyLEQTvIX/banner_HOME_captamos16.png); background-size:100%; height:390px;">
+	<div class="col-xs-8 col-xs-offset-8 slideText bgslidecontent">
+		<h1><a href="news/14783/imposto-sobre-doao-causa-confuso-jurdica-e-no-deveria-existir-avalia-pesquisador-da-fgv.html" class="">"Imposto sobre doação não deveria existir!"</a></h1>
+		<p>Avalia Eduardo Pannunzio, advogado e pesquisador da FGV.</p>
+				<a href="news/14783/imposto-sobre-doao-causa-confuso-jurdica-e-no-deveria-existir-avalia-pesquisador-da-fgv.html" class="cta ">SAIBA MAIS</a>
+			</div>
+</div>
+
+							</div>
+														<div class="item ">
+								<div class="row" style="background:url(data/slides/nJkhsUSteKOoj/banner_HOME_captamos18.png); background-size:100%; height:390px;">
+	<div class="col-xs-8 col-xs-offset-8 slideText bgslidecontent">
+		<h1><a href="news/14444/apadrinhamento-garante-alta-reteno-de-doadores-mas-exige-controle-rgido.html" class="">Apadrinhamento garante alta retenção de doadores!</a></h1>
+		<p>Veja o grande diferencial dessa técnica de captação.</p>
+				<a href="news/14444/apadrinhamento-garante-alta-reteno-de-doadores-mas-exige-controle-rgido.html" class="cta ">SAIBA MAIS</a>
+			</div>
+</div>
+
+							</div>
+													</div>
+					</div>
+									<!--FIN CAROUSEL-->
+				</div>
+
+
+				<div class="main-content home">
+
+					<div class="row">
+						<div class="col-xs-16">
+
+							<div class="row mt20">
+								<div class="col-xs-7h pull-left">
+									<div class="row">
+										<div class="col-xs-15 col-xs-offset-1">
+											<div class="box clearfix" id="planes_y_cursos">
+												<div class="head clearfix">
+													<a href="learn/programs.html"><h3 class="pull-left">Cursos <i class="captamos-icons inline cursos"></i></h3></a>
+													<a href="learn/programs.html" class="pull-right seeall">Ver todos <i class="captamos-icons inline ver-todas"></i></a>
+												</div>
+												<div class="body">
+													<div class="row">
+														<div class="col-xs-16">
+
+																														<div class="col-xs-16 curso">
+																<a href="learn/programs/p/13086/captacao_premioseditais.html">
+																	<img src="data/programs/13086/542x312_outra.jpg" alt="" class="img-responsive"/>
+																</a>
+																<a href="index.html#" class="catlink">Fontes e técnicas</a>
+																<div class="ctitle">
+																	<a href="learn/programs/p/13086/captacao_premioseditais.html" class="orange">Captação via Prêmios e Editais Socioambientais</a>
+																</div>
+																<div class="csubtitle">
+																	Vanessa Prata, Sócia-fundadora da Ponte a Ponte, ensina como captação recursos via prêmios e editais da área socioambiental.																</div>
+															</div>
+																																												</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- mis cursos -->
+
+									<!-- historias y casos-->
+									<div class="row">
+										<div class="col-xs-15 col-xs-offset-1 historias-casos">
+											<div class="box">
+												<div class="head clearfix">
+													<a href="news/cases.html"><h3 class="pull-left">Historias e cases <i class="captamos-icons inline historias-casos"></i></h3></a>
+													<a href="news/cases.html" class="pull-right seeall">Ver todas <i class="captamos-icons inline ver-todas"></i></a>
+												</div>
+												<div class="body">
+																										<div class="col-xs-16 novedad">
+																												<div class="col-xs-6">
+															<a href="news/15221/saiba-como-organizao-conseguiu-captar-r-107-mil-em-24-horas-no-diadedoar.html"><img src="data/news/DxUmNuz7Yh/logo-inst2.png" class="img-responsive" /></a>
+														</div>
+																												<div class="col-xs-10 info">
+															<a href="news/15221/saiba-como-organizao-conseguiu-captar-r-107-mil-em-24-horas-no-diadedoar.html" class="catlink">Contexto e tendências</a> | <span class="fecha">26 de Novembro de 2018 às 06:00</span>
+															<div class="ctitle">
+																<a href="news/15221/saiba-como-organizao-conseguiu-captar-r-107-mil-em-24-horas-no-diadedoar.html">Saiba como organização conseguiu captar R$ 107 mil em 24 horas no #diadedoar</a>
+															</div>
+															<div class="csubtitle">
+																Em um pa&iacute;s onde muito se fala sobre a falta de uma cultura de doa&ccedil;&atilde;o, como explicar uma campanha que, em apenas 24 horas, arrecadou&#8230;															</div>
+														</div>
+													</div>
+																										<div class="col-xs-16 novedad">
+																												<div class="col-xs-6">
+															<a href="news/14926/organizao-transforma-ciclistas-em-captadores-e-tem-retorno-de-4000-sobre-valor-investido-em-campanha.html"><img src="data/news/R0XOWBdaIN/ciclistas.jpeg" class="img-responsive" /></a>
+														</div>
+																												<div class="col-xs-10 info">
+															<a href="news/14926/organizao-transforma-ciclistas-em-captadores-e-tem-retorno-de-4000-sobre-valor-investido-em-campanha.html" class="catlink">Contexto e tendências</a> | <span class="fecha">31 de Outubro de 2018 às 06:00</span>
+															<div class="ctitle">
+																<a href="news/14926/organizao-transforma-ciclistas-em-captadores-e-tem-retorno-de-4000-sobre-valor-investido-em-campanha.html">Organização transforma ciclistas em captadores e tem retorno de 4000% sobre valor investido em campanha</a>
+															</div>
+															<div class="csubtitle">
+																Se a capta&ccedil;&atilde;o de recursos &eacute; um desafio di&aacute;rio, por que n&atilde;o pedir ajuda a um grupo perito em superar limites? Pois foi&#8230;															</div>
+														</div>
+													</div>
+																									</div>
+											</div>
+										</div>
+									</div>
+									<!-- end historias y casos-->
+
+									<!-- novedades y tendencias -->
+									<div class="row">
+										<div class="col-xs-15 col-xs-offset-1 tendencias">
+											<div class="box">
+												<div class="head clearfix">
+													<a href="news/tendencias.html"><h3 class="pull-left">Novidades e tendências <i class="captamos-icons inline novedades-tendencias"></i></h3></a>
+													<a href="news/tendencias.html" class="pull-right seeall">Ver todas <i class="captamos-icons inline ver-todas"></i></a>
+												</div>
+												<div class="body">
+																										<div class="col-xs-16 novedad">
+																												<div class="col-xs-6">
+															<a href="news/15312/ong-que-promove-insero-social-pelo-audiovisual-transforma-youtube-em-ferramenta-de-captao.html"><img src="data/news/05X2mFhoWR/quero.jpg" class="img-responsive" /></a>
+														</div>
+																												<div class="col-xs-10 info">
+															<a href="news/15312/ong-que-promove-insero-social-pelo-audiovisual-transforma-youtube-em-ferramenta-de-captao.html" class="catlink">Contexto e tendências</a> | <span class="fecha">06 de Dezembro de 2018 às 06:00</span>
+															<div class="ctitle">
+																<a href="news/15312/ong-que-promove-insero-social-pelo-audiovisual-transforma-youtube-em-ferramenta-de-captao.html">ONG que promove inserção social pelo audiovisual "transforma" YouTube em ferramenta de captação</a>
+															</div>
+															<div class="csubtitle">
+																O audiovisual est&aacute; no cerne do Instituto Quer&ocirc;, que promove oficinas pr&aacute;ticas sobre o tema com jovens em situa&ccedil;&atilde;o de&#8230;															</div>
+														</div>
+													</div>
+																										<div class="col-xs-8 novedad">
+																												<div class="col-xs-16 info">
+															<a href="news/15193/vai-captar-recursos-veja-por-que-o-sms-um-bom-aliado.html" class="catlink">Fontes e técnicas</a> | <span class="fecha">21 de Novembro de 2018 às 06:00</span>
+															<div class="ctitle">
+																<a href="news/15193/vai-captar-recursos-veja-por-que-o-sms-um-bom-aliado.html">Vai captar recursos? Veja por que o SMS é um bom aliado</a>
+															</div>
+															<div class="csubtitle">
+																Em um mundo apinhado de redes sociais, que papel na capta&ccedil;&atilde;o poderia ter o SMS, cuja cria&ccedil;&atilde;o remonta aos prim&oacute;rdios&#8230;															</div>
+														</div>
+													</div>
+																										<div class="col-xs-8 novedad">
+																												<div class="col-xs-16 info">
+															<a href="news/15128/aps-estrutura-jurdica-fundos-patrimoniais-filantrpicos-comeam-a-ganhar-terreno-no-brasil.html" class="catlink">Contexto e tendências</a> | <span class="fecha">14 de Novembro de 2018 às 06:00</span>
+															<div class="ctitle">
+																<a href="news/15128/aps-estrutura-jurdica-fundos-patrimoniais-filantrpicos-comeam-a-ganhar-terreno-no-brasil.html">Após estrutura jurídica, fundos patrimoniais filantrópicos começam a ganhar terreno no Brasil</a>
+															</div>
+															<div class="csubtitle">
+																Por tr&aacute;s do sucesso acad&ecirc;mico da Universidade de Harvard, h&aacute; U$ 39 bilh&otilde;es que garantem a sustentabilidade financeira de uma&#8230;															</div>
+														</div>
+													</div>
+																									</div>
+											</div>
+										</div>
+									</div>
+									<!-- end novedades y tendencias -->
+
+									<!-- webinars -->
+
+									<div class="row">
+										<div class="col-xs-15 col-xs-offset-1 box clearfix tips mt20">
+											<div class="head clearfix mt20">
+												<a href="collab/tips.html"><h3 class="pull-left">Dicas <i class="captamos-icons inline tips"></i></h3></a>
+												<a href="collab/tips.html" class="pull-right seeall">Ver todas <i class="captamos-icons inline ver-todas"></i></a>
+											</div>
+											<div class="body">
+												<div class="col-xs-16 list">
+																										<div class="col-xs-16 tip">
+																													<div class="col-xs-5 nopad">
+																<div class="col-xs-16 nopad">
+																	<a href="tips/15250/E-book-Gratuito-Como-aumentar-o-alcance-de-suas-publicaes-no-facebook.html"><img src="data/channels/public/files/Ebook_gratuito_1543461900.png" class="img-responsive" /></a>
+																</div>
+															</div>
+															<br>
+																												<div class="col-xs-offset-1 col-xs-10">
+															<div class="ctitle">
+																<a href="tips/15250/E-book-Gratuito-Como-aumentar-o-alcance-de-suas-publicaes-no-facebook.html">E-book Gratuito: Como aumentar o alcance de suas publicações no facebook?</a>
+															</div>
+															<div class="author">
+																<p>por <a href="index.html" data-id="3685" class="reqlogin">Rodrigo Fonseca</a></p>
+															</div>
+															<div class="col-xs-16">
+																<div class="col-xs-6 rate">
+																	<p class="stars reqlogin">
+																		<a href="index.html#" rel="s1"></a>
+																		<a href="index.html#" rel="s2"></a>
+																		<a href="index.html#" rel="s3"></a>
+																		<a href="index.html#" rel="s4"></a>
+																		<a href="index.html#" rel="s5"></a>
+																	</p>
+																</div>
+																<div class="col-xs-10 avalie text-left">
+																	Avalie esta dica
+																</div>
+															</div>
+														</div>
+													</div>
+																										<div class="col-xs-16 tip">
+																													<div class="col-xs-5 nopad">
+																<div class="col-xs-16 nopad">
+																	<a href="tips/12704/PROGRAMAS-DO-ESTADO-DE-SO-PAULO-PROAC-ICMS-Programa-de-Ao-Cultural-e-PIE-ICMS-Programa-de-incentivo-ao-Esporte.html"><img src="data/channels/public/files/Lãmina_do_PROAC_e_PIE_1528478935.png" class="img-responsive" /></a>
+																</div>
+															</div>
+															<br>
+																												<div class="col-xs-offset-1 col-xs-10">
+															<div class="ctitle">
+																<a href="tips/12704/PROGRAMAS-DO-ESTADO-DE-SO-PAULO-PROAC-ICMS-Programa-de-Ao-Cultural-e-PIE-ICMS-Programa-de-incentivo-ao-Esporte.html">PROGRAMAS DO ESTADO DE SÃO PAULO  PROAC – ICMS - Programa de Ação Cultural e PIE – ICMS - Programa de incentivo ao Esporte.</a>
+															</div>
+															<div class="author">
+																<p>por <a href="index.html" data-id="7958" class="reqlogin">Almir da Silva Rodrigues</a></p>
+															</div>
+															<div class="col-xs-16">
+																<div class="col-xs-6 rate">
+																	<p class="stars reqlogin">
+																		<a href="index.html#" rel="s1"></a>
+																		<a href="index.html#" rel="s2"></a>
+																		<a href="index.html#" rel="s3"></a>
+																		<a href="index.html#" rel="s4"></a>
+																		<a href="index.html#" rel="s5"></a>
+																	</p>
+																</div>
+																<div class="col-xs-10 avalie text-left">
+																	Avalie esta dica
+																</div>
+															</div>
+														</div>
+													</div>
+																									</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-xs-7h pull-right">
+									<div class="row">
+										<div class="col-xs-15">
+											<div class="box clearfix">
+												<div class="head clearfix">
+													<a href="collab/feed.html"><h3 class="pull-left">Feed <i class="captamos-icons inline feed"></i></h3></a>
+												</div>
+												<div class="body">
+													<ul class="list-unstyled list-post" id="wallposts">
+																												<li class="list-post-item">
+															<div class="panel panel-post">
+																<div class="panel-heading">
+																	<div class="media">
+																		<div class="media-left media-middle">
+																			<a data-id="15468" class="lnkMemberTip" href="index.html" class="reqlogin">
+																				<img src="data/users/5c2555a6b958e/50x50_profile.jpg%3Ft=1546215051" class="media-object img-circle">
+																			</a>
+																		</div>
+																		<div class="media-body">
+																			<h4 class="media-heading">
+																				<a href="index.html" data-id="15468" class="reqlogin">
+																					fabricio da costa lopes																				</a>
+																																									<a href="learn/programs/questions/13086/captacao_premioseditais.html">
+																						avaliou o curso</a> <a href='learn/programs/reviews/13086/captacao_premioseditais.html'>Captação via Prêmios e Editais Socioambientais</a>																					</a>
+
+																																							</h4>
+																			<span class="post-date">27 de Dezembro de 2018 às 21:47</span>
+																		</div>
+																	</div>
+																</div>
+																<div class="panel-body">
+
+
+																	<p>Foi muito útil, esclarecedor e ajudou na capacitação para uma inscrição em ditais e prêmios para as organizações socioambientais<br />
+valeu Vanessa.<br />
+</p>
+
+																	<div class="post-attachments">
+
+<script>
+if(typeof init_owl_attachments === "function")
+	init_owl_attachments();
+</script>																	</div>
+
+
+																	<!-- SI COMPARTIO UN CONTENIDO LO MUESTRO ACA -->
+																																		<!-- END CONTENIDO COMPARTIDO -->
+
+																	<nav class="post-actions">
+																		<ul class="list-inline ">
+																			<!--<li><a href="#">COMENTARIOS</a></li>-->
+																			<li><a href="index.html#" class="btnLike reqlogin " data-entity="15469">CURTIR (<span class="numlikes">0</span>)</a></li>
+																			<li>
+																				<!--
+																				<a href="/shares/get/15469" class="reqlogin fiframe fancybox.iframe">COMPARTILHAR (<span class="numshares">0</span>)</a>
+																				-->
+
+																				<a href="index.html#" class="btnShare">
+																					<i class="material-icons">share</i>COMPARTILHAR &nbsp;&nbsp;
+																					<div class="box-share" style="display:none;">
+																						<div href="/collab/feed/p/13086/15469" class="fb btnFacebook"></div>
+																						<div href="#" data-text="Foi+muito+%C3%BAtil%2C+esclarecedor+e+ajudou+na+capacita%C3%A7%C3%A3o+para+uma+inscri%C3%A7%C3%A3o+em+ditais+e+pr%C3%AAmios+para+as+organiza%C3%A7%C3%B5es+socioambientais%0Avaleu+Vanessa.%0A" data-url="/collab/feed/p/13086/15469" class="tw btnTwitter"></div>
+																						<div href="/shares/get/15469" class="ca fiframe reqlogin fancybox.iframe"></div>
+																					</div>
+																				</a>
+																			</li>
+																		</ul>
+																	</nav>
+																</div>
+
+																<ul class="list-group list-group-comentarios" id="comments_15469">
+																																	</ul>
+
+																															</div>
+														</li>
+																												<li class="list-post-item">
+															<div class="panel panel-post">
+																<div class="panel-heading">
+																	<div class="media">
+																		<div class="media-left media-middle">
+																			<a data-id="15457" class="lnkMemberTip" href="index.html" class="reqlogin">
+																				<img src="data/users/5c23dd30ccadf/50x50_profile.jpg%3Ft=1546215053" class="media-object img-circle">
+																			</a>
+																		</div>
+																		<div class="media-body">
+																			<h4 class="media-heading">
+																				<a href="index.html" data-id="15457" class="reqlogin">
+																					Fabiana Barros Pinho																				</a>
+																																									<a href="learn/programs/questions/10332/5_etapas_para_plano.html">
+																						avaliou o curso</a> <a href='learn/programs/reviews/10332/5_etapas_para_plano.html'>5 Etapas para um Plano de Captação de Recursos</a>																					</a>
+
+																																							</h4>
+																			<span class="post-date">27 de Dezembro de 2018 às 16:21</span>
+																		</div>
+																	</div>
+																</div>
+																<div class="panel-body">
+
+
+																	<p>excelente material, já aguardando os próximos.</p>
+
+																	<div class="post-attachments">
+
+<script>
+if(typeof init_owl_attachments === "function")
+	init_owl_attachments();
+</script>																	</div>
+
+
+																	<!-- SI COMPARTIO UN CONTENIDO LO MUESTRO ACA -->
+																																		<!-- END CONTENIDO COMPARTIDO -->
+
+																	<nav class="post-actions">
+																		<ul class="list-inline ">
+																			<!--<li><a href="#">COMENTARIOS</a></li>-->
+																			<li><a href="index.html#" class="btnLike reqlogin " data-entity="15464">CURTIR (<span class="numlikes">0</span>)</a></li>
+																			<li>
+																				<!--
+																				<a href="/shares/get/15464" class="reqlogin fiframe fancybox.iframe">COMPARTILHAR (<span class="numshares">0</span>)</a>
+																				-->
+
+																				<a href="index.html#" class="btnShare">
+																					<i class="material-icons">share</i>COMPARTILHAR &nbsp;&nbsp;
+																					<div class="box-share" style="display:none;">
+																						<div href="/collab/feed/p/10332/15464" class="fb btnFacebook"></div>
+																						<div href="#" data-text="excelente+material%2C+j%C3%A1+aguardando+os+pr%C3%B3ximos." data-url="/collab/feed/p/10332/15464" class="tw btnTwitter"></div>
+																						<div href="/shares/get/15464" class="ca fiframe reqlogin fancybox.iframe"></div>
+																					</div>
+																				</a>
+																			</li>
+																		</ul>
+																	</nav>
+																</div>
+
+																<ul class="list-group list-group-comentarios" id="comments_15464">
+																																	</ul>
+
+																															</div>
+														</li>
+																												<li class="list-post-item">
+															<div class="panel panel-post">
+																<div class="panel-heading">
+																	<div class="media">
+																		<div class="media-left media-middle">
+																			<a data-id="12668" class="lnkMemberTip" href="index.html" class="reqlogin">
+																				<img src="data/users/5b18a542b665e/50x50_profile.jpg%3Ft=1546215056" class="media-object img-circle">
+																			</a>
+																		</div>
+																		<div class="media-body">
+																			<h4 class="media-heading">
+																				<a href="index.html" data-id="12668" class="reqlogin">
+																					iris rosário																				</a>
+																																									<a href="learn/programs/questions/13086/captacao_premioseditais.html">
+																						avaliou o curso</a> <a href='learn/programs/reviews/13086/captacao_premioseditais.html'>Captação via Prêmios e Editais Socioambientais</a>																					</a>
+
+																																							</h4>
+																			<span class="post-date">16 de Dezembro de 2018 às 20:17</span>
+																		</div>
+																	</div>
+																</div>
+																<div class="panel-body">
+
+
+																	<p>Exelente!</p>
+
+																	<div class="post-attachments">
+
+<script>
+if(typeof init_owl_attachments === "function")
+	init_owl_attachments();
+</script>																	</div>
+
+
+																	<!-- SI COMPARTIO UN CONTENIDO LO MUESTRO ACA -->
+																																		<!-- END CONTENIDO COMPARTIDO -->
+
+																	<nav class="post-actions">
+																		<ul class="list-inline ">
+																			<!--<li><a href="#">COMENTARIOS</a></li>-->
+																			<li><a href="index.html#" class="btnLike reqlogin " data-entity="15408">CURTIR (<span class="numlikes">0</span>)</a></li>
+																			<li>
+																				<!--
+																				<a href="/shares/get/15408" class="reqlogin fiframe fancybox.iframe">COMPARTILHAR (<span class="numshares">0</span>)</a>
+																				-->
+
+																				<a href="index.html#" class="btnShare">
+																					<i class="material-icons">share</i>COMPARTILHAR &nbsp;&nbsp;
+																					<div class="box-share" style="display:none;">
+																						<div href="/collab/feed/p/13086/15408" class="fb btnFacebook"></div>
+																						<div href="#" data-text="Exelente%21" data-url="/collab/feed/p/13086/15408" class="tw btnTwitter"></div>
+																						<div href="/shares/get/15408" class="ca fiframe reqlogin fancybox.iframe"></div>
+																					</div>
+																				</a>
+																			</li>
+																		</ul>
+																	</nav>
+																</div>
+
+																<ul class="list-group list-group-comentarios" id="comments_15408">
+																																		<li class="list-group-item">
+																		<div class="media">
+																			<div class="media-left">
+																				<a href="index.html" data-id="1108" class="reqlogin">
+																				<img src="data/users/56645d9139471/30x30_profile.jpg%3Ft=1546215058" class="media-object img-circle">
+																			</a>
+																		  </div>
+																		  <div class="media-body">
+																			<p><a href="index.html" data-id="1108" class="reqlogin">Captamos </a> Obaaaa, ficamos muito felizes que tenha achado o curso excelente, <a href="index.html" class="reqlogin">iris rosário</a>!! :))</p>
+																			<!--
+																				<nav class="post-comentarios-actions">
+																					<ul class="list-inline ">
+																						<li><a href="#">ME GUSTA</a></li>
+																					</ul>
+																				</nav>
+																			-->
+																		  </div>
+																		  <div class="media-right">
+																			<span class="cometario-time">17 de Dezembro de 2018 às 02:11</span>
+																		  </div>
+																		</div>
+																	</li>
+																																	</ul>
+
+																															</div>
+														</li>
+																												<li class="list-post-item">
+															<div class="panel panel-post">
+																<div class="panel-heading">
+																	<div class="media">
+																		<div class="media-left media-middle">
+																			<a data-id="12668" class="lnkMemberTip" href="index.html" class="reqlogin">
+																				<img src="data/users/5b18a542b665e/50x50_profile.jpg%3Ft=1546215056" class="media-object img-circle">
+																			</a>
+																		</div>
+																		<div class="media-body">
+																			<h4 class="media-heading">
+																				<a href="index.html" data-id="12668" class="reqlogin">
+																					iris rosário																				</a>
+																																									<a href="learn/programs/questions/7151/captacao_online.html">
+																						avaliou o curso</a> <a href='learn/programs/reviews/7151/captacao_online.html'>Captação online</a>																					</a>
+
+																																							</h4>
+																			<span class="post-date">15 de Dezembro de 2018 às 14:18</span>
+																		</div>
+																	</div>
+																</div>
+																<div class="panel-body">
+
+
+																	<p>uhuuuuu!!!!!</p>
+
+																	<div class="post-attachments">
+
+<script>
+if(typeof init_owl_attachments === "function")
+	init_owl_attachments();
+</script>																	</div>
+
+
+																	<!-- SI COMPARTIO UN CONTENIDO LO MUESTRO ACA -->
+																																		<!-- END CONTENIDO COMPARTIDO -->
+
+																	<nav class="post-actions">
+																		<ul class="list-inline ">
+																			<!--<li><a href="#">COMENTARIOS</a></li>-->
+																			<li><a href="index.html#" class="btnLike reqlogin " data-entity="15400">CURTIR (<span class="numlikes">1</span>)</a></li>
+																			<li>
+																				<!--
+																				<a href="/shares/get/15400" class="reqlogin fiframe fancybox.iframe">COMPARTILHAR (<span class="numshares">0</span>)</a>
+																				-->
+
+																				<a href="index.html#" class="btnShare">
+																					<i class="material-icons">share</i>COMPARTILHAR &nbsp;&nbsp;
+																					<div class="box-share" style="display:none;">
+																						<div href="/collab/feed/p/7151/15400" class="fb btnFacebook"></div>
+																						<div href="#" data-text="uhuuuuu%21%21%21%21%21" data-url="/collab/feed/p/7151/15400" class="tw btnTwitter"></div>
+																						<div href="/shares/get/15400" class="ca fiframe reqlogin fancybox.iframe"></div>
+																					</div>
+																				</a>
+																			</li>
+																		</ul>
+																	</nav>
+																</div>
+
+																<ul class="list-group list-group-comentarios" id="comments_15400">
+																																		<li class="list-group-item">
+																		<div class="media">
+																			<div class="media-left">
+																				<a href="index.html" data-id="1108" class="reqlogin">
+																				<img src="data/users/56645d9139471/30x30_profile.jpg%3Ft=1546215058" class="media-object img-circle">
+																			</a>
+																		  </div>
+																		  <div class="media-body">
+																			<p><a href="index.html" data-id="1108" class="reqlogin">Captamos </a> Uhuuuu dizemos nós, <a href="index.html" class="reqlogin">iris rosário</a>!! Ficamos felizes que tenha gostado :D</p>
+																			<!--
+																				<nav class="post-comentarios-actions">
+																					<ul class="list-inline ">
+																						<li><a href="#">ME GUSTA</a></li>
+																					</ul>
+																				</nav>
+																			-->
+																		  </div>
+																		  <div class="media-right">
+																			<span class="cometario-time">16 de Dezembro de 2018 às 16:00</span>
+																		  </div>
+																		</div>
+																	</li>
+																																	</ul>
+
+																															</div>
+														</li>
+																											</ul>
+												</div>
+											</div>
+
+											<div class="box clearfix preguntas mt20">
+												<div class="head clearfix">
+													<a href="collab/questions.html"><h3 class="pull-left">Perguntas e respostas <i class="captamos-icons inline preguntas"></i></h3></a>
+													<a href="collab/questions.html" class="pull-right seeall">Ver todas <i class="captamos-icons inline ver-todas"></i></a>
+												</div>
+												<div class="body">
+													<!--
+													<div class="col-xs-16">
+														<div class="msg">Na sua opniao, qual e o seu principal desafio na captacao de recursos?</div>
+														<br><a href="/collab/questions" class="pull-left btn btn-primary btn-lg">Responder</a>
+													</div>
+													-->
+													<div class="col-xs-16 list">
+																												<div class="col-xs-8">
+															<div class="col-xs-4">
+																<i class="captamos-icons inline pregunta"></i>
+															</div>
+															<div class="col-xs-12 q">
+																<strong>É ético e é de conformidade com a legislação que diretor estatutário possa ser remunerado como prestador de serviços de captação na própria organização onde é diretor?</strong>
+																<br>
+																<a href="collab/questions/q/0/14587.html">Clique e responda <i class="captamos-icons inline ver-todas"></i></a>
+															</div>
+														</div>
+																												<div class="col-xs-8">
+															<div class="col-xs-4">
+																<i class="captamos-icons inline pregunta"></i>
+															</div>
+															<div class="col-xs-12 q">
+																<strong>Bom dia ! Trabalho em uma OSC ( Organização da Sociedade Civil ).Pretendemos desenvolver uma campanha para sensibilizar&nbsp; contribuintes&nbsp; &nbsp;que pagam imposto de renda,ou seja , ao invés de pagarem a&nbsp; Receita Federal fariam uma&nbsp; &nbsp; doação para a causa da instituição e famílias com ás quais trabalhamos. Gostaríamos de conhecer experiências concretas de quem já desenvolve este trabalho.</strong>
+																<br>
+																<a href="collab/questions/q/0/14106.html">Clique e responda <i class="captamos-icons inline ver-todas"></i></a>
+															</div>
+														</div>
+																											</div>
+												</div>
+											</div>
+
+
+										</div>
+									</div>
+								</div>
+
+								<!-- articulos -->
+								<div class="col-xs-16 articulos">
+									<div class="box">
+										<div class="head clearfix">
+											<h3 class="pull-left">Artigos <i class="captamos-icons inline articulos"></i></h3>
+											<a href="news/articles.html" class="pull-right seeall">Ver todos <i class="captamos-icons inline ver-todas"></i></a>
+										</div>
+										<div class="body">
+											<div class="row">
+
+												<div class=" owl-theme owl-articles">
+
+																										<div class=" novedad">
+														<a href="news/15097/lies-da-conferncia-de-storytelling-e-impacto-social-nos-eua.html">
+															<div class="col-xs-16 info">
+																<img src="data/authors/24/100x100_MD_3x4.jpg" class="media-object img-circle">
+																<div class="ctitle">
+																	Marcelo Douek																</div>
+																<div class="csubtitle">
+																	Lições da Conferência de Storytelling e Impacto Social nos EUA																</div>
+															</div>
+														</a>
+													</div>
+																										<div class=" novedad">
+														<a href="news/15293/mobilizando-recursos-com-o-poder-das-pessoas.html">
+															<div class="col-xs-16 info">
+																<img src="data/authors/3/100x100_foto1.JPG" class="media-object img-circle">
+																<div class="ctitle">
+																	Flávia Lang																</div>
+																<div class="csubtitle">
+																	Mobilizando Recursos com o Poder das Pessoas																</div>
+															</div>
+														</a>
+													</div>
+																										<div class=" novedad">
+														<a href="news/14814/quem-o-captador-brasileiro.html">
+															<div class="col-xs-16 info">
+																<img src="data/authors/2/100x100_Jp.jpg" class="media-object img-circle">
+																<div class="ctitle">
+																	João Paulo Vergueiro																</div>
+																<div class="csubtitle">
+																	Quem é o captador brasileiro?																</div>
+															</div>
+														</a>
+													</div>
+																										<div class=" novedad">
+														<a href="news/14765/fundos-patrimoniais-e-doaes-privadas-para-projetos-de-interesse-pblico.html">
+															<div class="col-xs-16 info">
+																<img src="data/authors/23/100x100_luma.jpg" class="media-object img-circle">
+																<div class="ctitle">
+																	Luma Scaff																</div>
+																<div class="csubtitle">
+																	Fundos patrimoniais e doações privadas para projetos de interesse público																</div>
+															</div>
+														</a>
+													</div>
+																										<div class=" novedad">
+														<a href="news/14686/como-inovar-na-sua-organizao.html">
+															<div class="col-xs-16 info">
+																<img src="data/authors/14/100x100_Jonas-150x150.jpg" class="media-object img-circle">
+																<div class="ctitle">
+																	Jonas Araujo																</div>
+																<div class="csubtitle">
+																	Como inovar na sua organização?																</div>
+															</div>
+														</a>
+													</div>
+																										<div class=" novedad">
+														<a href="news/14599/compliance-no-terceiro-setor.html">
+															<div class="col-xs-16 info">
+																<img src="data/authors/13/100x100_DSC020971.jpg" class="media-object img-circle">
+																<div class="ctitle">
+																	Nailton Cazumbá																</div>
+																<div class="csubtitle">
+																	Compliance no Terceiro Setor																</div>
+															</div>
+														</a>
+													</div>
+																										<div class=" novedad">
+														<a href="news/14502/vcios-ratos-e-conexes-humanas.html">
+															<div class="col-xs-16 info">
+																<img src="data/authors/22/100x100_WhatsApp_Image_2018-08-15_at_00_25_31.jpeg" class="media-object img-circle">
+																<div class="ctitle">
+																	Rodrigo Zavala																</div>
+																<div class="csubtitle">
+																	Vícios, ratos e conexões humanas																</div>
+															</div>
+														</a>
+													</div>
+																										<div class=" novedad">
+														<a href="news/14404/elaborando-projetos-de-forma-participativa.html">
+															<div class="col-xs-16 info">
+																<img src="data/authors/15/100x100_Rafael_Vargas_VI.jpg" class="media-object img-circle">
+																<div class="ctitle">
+																	Rafael Vargas																</div>
+																<div class="csubtitle">
+																	Elaborando projetos de forma participativa																</div>
+															</div>
+														</a>
+													</div>
+																										<div class=" novedad">
+														<a href="news/14277/a-doacao-como-contribuicao-para-o-pais.html">
+															<div class="col-xs-16 info">
+																<img src="data/authors/21/100x100_mari2.jpg" class="media-object img-circle">
+																<div class="ctitle">
+																	Mariana Moraes																</div>
+																<div class="csubtitle">
+																	A doação como contribuição para o país																</div>
+															</div>
+														</a>
+													</div>
+																										<div class=" novedad">
+														<a href="news/5818/estratgia-3-gerao-de-renda-prpria-grp-parte-33.html">
+															<div class="col-xs-16 info">
+																<img src="data/authors/6/100x100_foto_michel_colorida.jpg" class="media-object img-circle">
+																<div class="ctitle">
+																	Michel Freller 																</div>
+																<div class="csubtitle">
+																	Estratégia 3: Geração de Renda Própria - GRP  - parte 3/3																</div>
+															</div>
+														</a>
+													</div>
+																																						</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end articulos  -->
+
+								<!-- parceiros -->
+								<div class="col-xs-16 parceiros">
+									<div class="row">
+										<div class="col-xs-16">
+											<div class="box">
+												<div class="head clearfix">
+													<h3 class="pull-left">Parceiros <i class="captamos-icons inline parceiros"></i></h3>
+												</div>
+												<div class="body">
+													<div class="owl-carousel owl-theme owl-parceiros">
+																													<div class="novedad">
+																<div class="col-xs-16 info">
+																																			<a href="https://www.fadc.org.br/" target="_blank">
+																			<img src="data/parceiros/9/abrinq1.png" alt="Abrinq" />
+																		</a>
+																																	</div>
+															</div>
+																																												<div class="novedad">
+																<div class="col-xs-16 info">
+																																			<a href="http://www.institutocea.org.br/" target="_blank">
+																			<img src="data/parceiros/10/cea2.png" alt="C&A" />
+																		</a>
+																																	</div>
+															</div>
+																																												<div class="novedad">
+																<div class="col-xs-16 info">
+																																			<a href="http://www.4etapas.com.br/" target="_blank">
+																			<img src="data/parceiros/1/01.png" alt="4 Etapas da Captacao" />
+																		</a>
+																																	</div>
+															</div>
+																																												<div class="novedad">
+																<div class="col-xs-16 info">
+																																			<a href="http://captadores.org.br/" target="_blank">
+																			<img src="data/parceiros/2/02.png" alt="ABCR" />
+																		</a>
+																																	</div>
+															</div>
+																																												<div class="novedad">
+																<div class="col-xs-16 info">
+																																			<a href="http://www.aviagemdeodiseo.com/" target="_blank">
+																			<img src="data/parceiros/3/odiseo.png" alt="Odiseo" />
+																		</a>
+																																	</div>
+															</div>
+																																												<div class="novedad">
+																<div class="col-xs-16 info">
+																																			<a href="http://www.arapyau.org.br/" target="_blank">
+																			<img src="data/parceiros/5/arapyau.png" alt="Arapyau" />
+																		</a>
+																																	</div>
+															</div>
+																																												<div class="novedad">
+																<div class="col-xs-16 info">
+																																			<a href="http://www.fjpn.com.br/" target="_blank">
+																			<img src="data/parceiros/8/fjpn.png" alt="Fundação José de Paiva Neto" />
+																		</a>
+																																	</div>
+															</div>
+																																										</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end parceiros  -->
+
+
+							</div>
+							<!-- FIN CURRICULA -->
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<footer>
+			<div class="container">
+				<div class="col-xs-2">
+					<a class="navbar-brand" href="index.html#">
+						<img src="assets/images/twh-logo.png" class="img-responsive">
+					</a>
+					<ul class="list-unstyled ul-redes">
+						<li><a href="https://www.facebook.com/captamosbr" target="_blank"><img src="assets/images/ico-fb.png" alt=""></a></li>
+						<li><a href="https://www.twitter.com/captamosbr" target="_blank"><img src="assets/images/ico-tw.png" alt=""></a></li>
+					</ul>
+				</div>
+				<div class="col-xs-offset-1 col-xs-3 col">
+					<p>INSPIRE-SE</p>
+					<ul class="list-unstyled">
+						<li><a href="news/tendencias.html">Novidades e Tendências</a></li>
+						<li><a href="news/cases.html">Histórias e Cases</a></li>
+						<li><a href="news/articles.html">Artigos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-3 col">
+					<p>APRENDA</p>
+					<ul class="list-unstyled">
+						<li><a href="learn/programs.html">Cursos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-3 col">
+					<p>COMPARTILHE</p>
+					<ul class="list-unstyled">
+						<li><a href="collab/feed.html">Feed</a></li>
+						<li><a href="collab/questions.html">Perguntas e Respostas</a></li>
+						<li><a href="collab/tips.html">Dicas</a></li>
+						<li><a href="collab/files.html">Arquivos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-3 col">
+					<p>SOBRE NÓS</p>
+					<ul class="list-unstyled">
+						<li><a href="sobrenos.html">Sobre nós</a></li>
+						<li><a href="index.html#" class="lnkContacto">Contato</a></li>
+						<li><a href="faq.html">Perguntas Frequentes</a></li>
+						<li><a href="termos.html">Termos e Condições de Uso</a></li>
+						<li><a href="https://www.facebook.com/captamosbr" target="_blank">Facebook</a></li>
+						<li><a href="https://www.twitter.com/captamosbr" target="_blank">Twitter</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+
+
+		<script>var current_section = "";</script>
+
+		<!-- -->
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<!-- Plugins -->
+		<script src="assets/vendor/malihu/jquery.mCustomScrollbar.min.js"></script>
+		<!--  -->
+		<script>
+		var baseURL = '/';
+		var currentURL = '/';
+		</script>
+		<script src="assets/js/plugins/jquery.elastic.js"></script>
+		<script src="assets/js/plugins/jquery.events.input.js"></script>
+		<script src="assets/js/plugins.js"></script>
+		<script src="assets/js/moment.js"></script>
+		<script src="assets/js/bootstrap-datetimepicker.js"></script>
+		<script src="assets/js/plugins/jquery.scrollto.min.js"></script>
+		<script src="assets/js/locales/pt-br.js"></script>
+		<script src="assets/js/bootbox.min.js"></script>
+		<script>
+		var lang = new Array();
+		lang['Cambiar imagen de perfil'] = 'Trocar imagem de perfil';
+		lang['Cambiar imagen de portada'] = 'Trocar imagem de capa';
+		var reqlogin = 'reqlogin';
+
+		$(document).ready(function(){
+
+		});
+		</script>
+
+		<script src="assets/js/plugins/jMentions.min.js"></script>
+
+		<script type="text/javascript" src="assets/js/plugins/owl.carousel.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="assets/js/plugins/jquery.swipebox.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="assets/js/plugins/jquery-ui.js" charset="UTF-8"></script>
+<script type="text/javascript" src="assets/js/plugins/underscore.js" charset="UTF-8"></script>
+<script type="text/javascript" src="assets/js/plugins/jquery.liveurl.js" charset="UTF-8"></script>
+<script type="text/javascript" src="assets/js/plugins/owl.carousel.min.js" charset="UTF-8"></script>
+
+		<script src="assets/js/main.js"></script>
+
+		<a href="index.html#" class="restorePass" data-code="" style="display:none;"></a>
+
+
+		<script>
+		  window.addEventListener('load', function() {
+			jQuery('body').on('click', ' .row .col-xs-16 a.btn-login:contains("entrar")', function() {
+			  jQuery('body').append('<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/842694596/?label=WqO-CLPhhXQQxP_pkQM&amp;guid=ON&amp;script=0"/>');
+			})
+		  })
+
+		</script>
+
+		<script>
+		  window.addEventListener('load', function() {
+			jQuery('body').on('click', ' .row .col-xs-16 a.btn-signup:contains("criar uma conta")', function() { jQuery('body').append('<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/842694596/?label=WqO-CLPhhXQQxP_pkQM&amp;guid=ON&amp;script=0"/>');
+			})
+		  })
+
+		</script>
+
+	</body>
+</html>

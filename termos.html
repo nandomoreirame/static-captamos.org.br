@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<link rel="icon" href="favicon.png">
+
+		<title>Captamos</title>
+
+		<meta property="og:url"           content="/termos" />
+		<meta property="og:type"          content="website" />
+		<meta property="og:locale" content="es_ES" />
+		<meta property="og:site_name" content="Captamos" />
+		<meta property="og:title"         content="" />
+		<meta property="og:description"   content="" />
+		<meta property="og:image"         content="" />
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<!--<meta name="twitter:site" content="@cuidalaslolas" />-->
+		<meta name="twitter:title" content="" />
+		<meta name="twitter:description" content="" />
+		<meta name="twitter:image" content="" />
+		<meta name="twitter:image:src" content="">
+		<meta name="twitter:url" content="/termos" />
+		<meta name="twitter:domain" content="/" />
+
+		<!--
+		<link href="/assets/css/fonts.css" rel="stylesheet">
+		-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700|Roboto:400,500,700' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+		<!-- Plugins -->
+		<link rel="stylesheet" href="assets/vendor/malihu/jquery.mCustomScrollbar.min.css" />
+		<!-- Main CSS -->
+		<link href="assets/css/styles.css" rel="stylesheet">
+		<link href="assets/css/custom.css" rel="stylesheet">
+		<link href="assets/css/bootstrap-datetimepicker.css" rel="stylesheet">
+		<link href="assets/css/theme.css" rel="stylesheet">
+
+		<link type="text/css" rel="stylesheet" href="assets/css/plugins/owl.carousel.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="assets/css/plugins/swipebox.min.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="assets/css/plugins/jquery-ui.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="assets/css/plugins/jquery.mentions.css" media="screen" />
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<script src="https://apis.google.com/js/client.js"> </script>
+		<script>
+		  var showlogin = false;
+
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-71665848-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+
+		<script>
+		var tip_form = false;
+		var is_tagging = false;
+		</script>
+
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-MLMV6DL');</script>
+		<!-- End Google Tag Manager -->
+
+	</head>
+
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLMV6DL"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
+
+		<script>
+		  window.fbAsyncInit = function() {
+		    FB.init({
+		      appId      : '159303931146435',
+		      xfbml      : false,
+		      version    : 'v2.5',
+		      cookie	 : true
+		    });
+		  };
+
+		  (function(d, s, id){
+		     var js, fjs = d.getElementsByTagName(s)[0];
+		     if (d.getElementById(id)) {return;}
+		     js = d.createElement(s); js.id = id;
+		     js.src = "//connect.facebook.net/pt_BR/sdk.js";
+		     fjs.parentNode.insertBefore(js, fjs);
+		   }(document, 'script', 'facebook-jssdk'));
+		</script>
+
+		<!-- Fixed navbar -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html"><img src="assets/images/twh-logo.png"></a>
+				</div>
+
+				<div id="navbar">
+					<!--
+					<form class="navbar-form navbar-form-search navbar-left" role="search" method="get" action="#">
+					-->
+					<form class="navbar-form navbar-form-search navbar-left" role="search" method="get" action="/search">
+						<div class="input-group has-feedback">
+					      	<input type="text" class="form-control" aria-label="..." id="keywords" name="q" placeholder="Buscar..." value="">
+							<i class="captamos-icons search"></i>
+					    </div>
+					</form>
+
+					<ul class="nav navbar-nav navbar-right notifications">
+												<li class="me">
+							<a href="termos.html#" class="reqlogin">Login</a>
+						</li>
+
+					</ul>
+
+				</div><!--/.nav-collapse -->
+			</div>
+
+			<div class="container">
+				<div class="col-xs-16">
+					<nav id="area-menu" class="clearfix">
+						<ul class="list-inline ">
+							<li class=""><div><span><a href="news/portal.html" class="">INSPIRE-SE</a></span></div><span class="u"></span></li>
+							<li class=""><div><span><a href="learn/portal.html" class="">APRENDA</a></span></div><span class="u"></span></li>
+							<li class="active"><div><span><a href="collab/feed.html" class="">COMPARTILHE</a></span></div><span class="u"></span></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+		</nav>
+
+		<div class="container">
+
+			<div class="col-xs-16">
+				<div class="main-content">
+
+
+
+					<div class="row">
+						<div class="col-xs-14 col-xs-offset-1">
+							<div class="panel panel-questions panel-faq">
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-xs-16">
+
+											<h2 class="hsection">
+												Termos e Condições de Uso
+											</h2>
+
+											<div class="col-xs-16">
+												<div class="row">
+													<strong>TERMOS</strong><br />
+<br />
+Os&nbsp;presentes&nbsp;Termos&nbsp;e&nbsp;Condi&ccedil;&otilde;es&nbsp;Gerais&nbsp;de Uso (&ldquo;Termos&rdquo;)&nbsp;da plataforma Captamos (&ldquo;Plataforma&rdquo;),&nbsp;t&ecirc;m&nbsp;por&nbsp;objetivo estabelecer&nbsp;as&nbsp;regras&nbsp;e condi&ccedil;&otilde;es&nbsp;para as&nbsp;quais&nbsp;os&nbsp;usu&aacute;rios (&ldquo;Usu&aacute;rios&rdquo;)&nbsp;devem&nbsp;aderir&nbsp;para acesso e utiliza&ccedil;&atilde;o da Plataforma.<br />
+<br />
+Ao&nbsp;utilizarem&nbsp;a&nbsp;Plataforma e aceitarem&nbsp;estes&nbsp;Termos, os&nbsp;Usu&aacute;rios&nbsp;submetem-&shy;se &agrave;s&nbsp;regras condi&ccedil;&otilde;es&nbsp;destes&nbsp;Termos e &agrave; Pol&iacute;tica de Privacidade, bem&nbsp;como a todos&nbsp;os&nbsp;documentos&nbsp;e informa&ccedil;&otilde;es&nbsp;relativos&nbsp;a&nbsp;estes.<br />
+<br />
+<strong>DEFINI&Ccedil;&Otilde;ES</strong><br />
+<br />
+Para&nbsp;efeitos&nbsp;dos&nbsp;presentes&nbsp;Termos, entende&shy;-se por:<br />
+<br />
+Captamos/Plataforma:&nbsp;&eacute;&nbsp;uma plataforma digital que produz&nbsp;conhecimento (cursos/mat&eacute;rias/cases/not&iacute;cias/dicas)&nbsp;acerca do tema capta&ccedil;&atilde;o de recursos&nbsp;e possibilita a intera&ccedil;&atilde;o&nbsp;entre&nbsp;os&nbsp;usu&aacute;rios, por&nbsp;meio de publica&ccedil;&otilde;es&nbsp;e coment&aacute;rios&nbsp;na plataforma e/ou redes&nbsp;sociais,&nbsp;gratuitamente.<br />
+<br />
+Usu&aacute;rios:&nbsp;s&atilde;o&nbsp;todas&nbsp;as&nbsp;pessoas&nbsp;que queiram&nbsp;mobilizar&nbsp;fundos&nbsp;para uma causa ou projeto, bem&nbsp;como&nbsp;todas&nbsp;as&nbsp;organiza&ccedil;&otilde;es&nbsp;da sociedade civil por&nbsp;meio de seus&nbsp;colaboradores&nbsp;que est&atilde;o&nbsp;ou&nbsp;estar&atilde;o&nbsp;envolvidos&nbsp;na capta&ccedil;&atilde;o de recursos.<br />
+<br />
+<strong>SOBRE&nbsp;A&nbsp;PLATAFORMA</strong><br />
+<br />
+A&nbsp;Captamos&nbsp;&eacute;&nbsp;um&nbsp;espa&ccedil;o de conte&uacute;dos&nbsp;e colabora&ccedil;&atilde;o para aprendizagem e inova&ccedil;&atilde;o em capta&ccedil;&atilde;o&nbsp;de&nbsp;recursos.&nbsp;Nossa miss&atilde;o &eacute; contribuir&nbsp;para elevar&nbsp;a capacidade da sociedade civil&nbsp;de&nbsp;acessar&nbsp;os&nbsp;recursos&nbsp;necess&aacute;rios&nbsp;para o impacto e autonomia de suas&nbsp;causas.<br />
+<br />
+A&nbsp;Plataforma&nbsp;tamb&eacute;m&nbsp;oferece aos&nbsp;Usu&aacute;rios&nbsp;acesso a cursos, not&iacute;cias, cases, dicas, bem como&nbsp;possibilita&nbsp;a&nbsp;intera&ccedil;&atilde;o entre eles, a fim&nbsp;de capacitar&nbsp;e aprimorar conhecimento acerca do&nbsp;tema.<br />
+<br />
+O&nbsp;acesso&nbsp;&agrave;&nbsp;Plataforma&nbsp;pode ser&nbsp;feito por&nbsp;meio de navegador&nbsp;de internet, podendo depender o&nbsp;bom&nbsp;funcionamento&nbsp;da Plataforma e suas&nbsp;funcionalidades&nbsp;das&nbsp;caracter&iacute;sticas&nbsp;tecnol&oacute;gicas dos&nbsp;aparelhos&nbsp;e&nbsp;da&nbsp;conex&atilde;o do Usu&aacute;rio com&nbsp;a internet.<br />
+<br />
+<strong>CADASTRO&nbsp;E&nbsp;UTILIZA&Ccedil;&Atilde;O DA PLATAFORMA</strong><br />
+<br />
+Somente&nbsp;&eacute;&nbsp;permitido&nbsp;o&nbsp;cadastro de pessoas&nbsp;f&iacute;sicas&nbsp;como Usu&aacute;rios&nbsp;na Plataforma, as&nbsp;quais dever&atilde;o&nbsp;fornecer&nbsp;as&nbsp;informa&ccedil;&otilde;es&nbsp;solicitadas, tais&nbsp;como dados&nbsp;pessoais&nbsp;b&aacute;sicos, incluindo, mas&nbsp;n&atilde;o&nbsp;se&nbsp;limitando&nbsp;a,&nbsp;nome completo, CPF e e&shy;mail.<br />
+<br />
+O&nbsp;Usu&aacute;rio&nbsp;declara&nbsp;que&nbsp;forneceu informa&ccedil;&otilde;es&nbsp;ver&iacute;dicas, completas&nbsp;e atualizadas, conforme solicitado&nbsp;no&nbsp;cadastro&nbsp;inicial para uso da Plataforma, n&atilde;o estando a Captamos&nbsp;obrigada a fiscalizar&nbsp;ou&nbsp;controlar&nbsp;a&nbsp;veracidade das&nbsp;informa&ccedil;&otilde;es&nbsp;fornecidas. O Usu&aacute;rio responsabiliza&shy;se,&nbsp;civil&nbsp;e&nbsp;criminalmente, pela veracidade das&nbsp;informa&ccedil;&otilde;es&nbsp;prestadas&nbsp;&agrave; Captamos.<br />
+<br />
+Somente&nbsp;as&nbsp;pessoas&nbsp;que&nbsp;tenham&nbsp;plena capacidade legal est&atilde;o autorizadas&nbsp;a se cadastrar na&nbsp;Plataforma.&nbsp;Pessoas&nbsp;que n&atilde;o gozem&nbsp;dessa capacidade, dentre estas&nbsp;os&nbsp;menores&nbsp;de idade,&nbsp;dever&atilde;o&nbsp;estar&nbsp;assistidos&nbsp;por&nbsp;seu representante legal.<br />
+<br />
+A&nbsp;Captamos&nbsp;se&nbsp;reserva&nbsp;o direito de utilizar&nbsp;todos&nbsp;os&nbsp;meios&nbsp;legais&nbsp;e poss&iacute;veis&nbsp;para entrar em contato&nbsp;com&nbsp;seus&nbsp;Usu&aacute;rios, bem&nbsp;como, a qualquer&nbsp;momento, solicitar documentos&nbsp;e/ou dados&nbsp;adicionais&nbsp;que,&nbsp;a&nbsp;seu exclusivo crit&eacute;rio, considere necess&aacute;rios&nbsp;para verificar os&nbsp;dados cadastrais&nbsp;informados.<br />
+<br />
+O&nbsp;Usu&aacute;rio&nbsp;ser&aacute;&nbsp;o&nbsp;&uacute;nico&nbsp;respons&aacute;vel pela guarda da senha de acesso &agrave; Plataforma, sendo que&nbsp;a&nbsp;Captamos&nbsp;n&atilde;o&nbsp;se&nbsp;responsabiliza por&nbsp;qualquer&nbsp;dano que resulte da divulga&ccedil;&atilde;o da senha&nbsp;do&nbsp;Usu&aacute;rio&nbsp;a&nbsp;terceiros.<br />
+<br />
+O&nbsp;cadastro&nbsp;do&nbsp;Usu&aacute;rio&nbsp;&eacute;&nbsp;pessoal e intransfer&iacute;vel, sendo vedada a transfer&ecirc;ncia, cess&atilde;o, comodato&nbsp;ou&nbsp;qualquer&nbsp;tipo de empr&eacute;stimo, por&nbsp;qualquer&nbsp;forma, do cadastro do Usu&aacute;rio a terceiros.<br />
+<br />
+Em&nbsp;caso&nbsp;de&nbsp;verifica&ccedil;&atilde;o&nbsp;de quaisquer&nbsp;erros&nbsp;ou irregularidades&nbsp;no cadastramento, a Captamos&nbsp;solicita&nbsp;ao&nbsp;Usu&aacute;rio que entre em&nbsp;contato por&nbsp;meio dos&nbsp;canais&nbsp;de atendimento disponibilizados.<br />
+<br />
+A&nbsp;Captamos&nbsp;poder&aacute;&nbsp;unilateralmente excluir&nbsp;o cadastro do Usu&aacute;rio que seja suspeito de fraude&nbsp;ou&nbsp;simula&ccedil;&atilde;o&nbsp;ou&nbsp;que de qualquer&nbsp;forma apresente conduta contr&aacute;ria aos&nbsp;presentes Termos&nbsp;ou&nbsp;&agrave;&nbsp;legisla&ccedil;&atilde;o.<br />
+<br />
+<strong>LIMITA&Ccedil;&Otilde;ES&nbsp;DE&nbsp;RESPONSABILIDADE</strong><br />
+<br />
+O&nbsp;Usu&aacute;rio&nbsp;reconhece&nbsp;e&nbsp;concorda que:<br />
+<br />
+A&nbsp;Captamos&nbsp;n&atilde;o&nbsp;se&nbsp;responsabiliza por&nbsp;danos&nbsp;sofridos&nbsp;pelo Usu&aacute;rio em raz&atilde;o de c&oacute;pia, transfer&ecirc;ncia,&nbsp;distribui&ccedil;&atilde;o&nbsp;ou qualquer&nbsp;outra forma de utiliza&ccedil;&atilde;o de conte&uacute;do protegido disponibilizado&nbsp;na&nbsp;Plataforma.<br />
+<br />
+A&nbsp;Captamos&nbsp;estar&aacute;&nbsp;isenta de qualquer&nbsp;dano ao qual n&atilde;o tiver&nbsp;dado causa e dever&aacute; ser ressarcida,&nbsp;direta&nbsp;ou&nbsp;indiretamente, de forma regressiva, pelo Usu&aacute;rio ou terceiro envolvido, na&nbsp;hip&oacute;tese&nbsp;de&nbsp;ser&nbsp;responsabilizada pela conduta de terceiros&nbsp;na utiliza&ccedil;&atilde;o da Plataforma.<br />
+<br />
+A&nbsp;Captamos&nbsp;n&atilde;o&nbsp;garante&nbsp;que a Plataforma estar&aacute; sempre livre de erros, interrup&ccedil;&otilde;es, oscila&ccedil;&otilde;es&nbsp;ou&nbsp;perdas&nbsp;de&nbsp;conte&uacute;do armazenado, n&atilde;o podendo, dessa forma, ser responsabilizada&nbsp;por&nbsp;danos&nbsp;morais&nbsp;ou materiais&nbsp;causados&nbsp;aos&nbsp;Usu&aacute;rios, bem como por eventuais&nbsp;lucros&nbsp;cessantes, em&nbsp;virtude de qualquer&nbsp;inconsist&ecirc;ncia no funcionamento da Plataforma.<br />
+<br />
+<strong>RESPONSABILIDADES E&nbsp;RISCOS&nbsp;DO USU&Aacute;RIO</strong><br />
+<br />
+O&nbsp;Usu&aacute;rio&nbsp;n&atilde;o&nbsp;poder&aacute;,&nbsp;sob hip&oacute;tese alguma, na utiliza&ccedil;&atilde;o da Plataforma: usar linguagem ou imagem&nbsp;obscena,&nbsp;ofensiva ou indecente. Transmitir&nbsp;ou propagar&nbsp;mensagem ou material ilegal,&nbsp;calunioso,&nbsp;injurioso, difamat&oacute;rio, prejudicial, abusivo, amea&ccedil;ador, vulgar, obsceno ou de&nbsp;qualquer&nbsp;outra&nbsp;forma&nbsp;censur&aacute;vel. Transmitir&nbsp;ou propagar&nbsp;informa&ccedil;&otilde;es&nbsp;sobre atividades ilegais&nbsp;e&nbsp;incita&ccedil;&atilde;o&nbsp;ao&nbsp;crime. Enviar&nbsp;material publicit&aacute;rio n&atilde;o solicitado a outros&nbsp;Usu&aacute;rios, via e&shy;mail&nbsp;ou&nbsp;qualquer&nbsp;outro&nbsp;meio de comunica&ccedil;&atilde;o, nem&nbsp;usar&nbsp;a plataforma como meio de capta&ccedil;&atilde;o ou,&nbsp;transmitir,&nbsp;propagar&nbsp;ou defender&nbsp;causas&nbsp;religiosas, pol&iacute;ticas&nbsp;ou de qualquer vi&eacute;s&nbsp;pessoal&nbsp;que&nbsp;extrapolem&nbsp;o tema central.<br />
+<br />
+O&nbsp;Usu&aacute;rio&nbsp;atesta&nbsp;que&nbsp;utiliza os&nbsp;servi&ccedil;os&nbsp;da Plataforma por&nbsp;sua livre e desimpedida escolha e&nbsp;reconhece&nbsp;e&nbsp;aceita&nbsp;como de sua inteira responsabilidade e risco a utiliza&ccedil;&atilde;o da Plataforma,&nbsp;bem&nbsp;como&nbsp;as&nbsp;consequ&ecirc;ncias&nbsp;e resultados&nbsp;de seu uso. A Captamos&nbsp;recomenda que&nbsp;o&nbsp;uso&nbsp;da&nbsp;Plataforma&nbsp;seja realizado com&nbsp;bom&nbsp;senso e cautela, n&atilde;o se responsabilizando pelos&nbsp;danos&nbsp;diretos&nbsp;ou&nbsp;indiretos&nbsp;decorrentes&nbsp;da sua utiliza&ccedil;&atilde;o.<br />
+<br />
+O&nbsp;Usu&aacute;rio&nbsp;compreende&nbsp;e tem&nbsp;consci&ecirc;ncia de todos&nbsp;os&nbsp;riscos&nbsp;envolvidos&nbsp;na utiliza&ccedil;&atilde;o da Plataforma&nbsp;e&nbsp;na&nbsp;consequente contrata&ccedil;&atilde;o de seus&nbsp;servi&ccedil;os, se comprometendo a empregar a&nbsp;dilig&ecirc;ncia&nbsp;e&nbsp;os&nbsp;cuidados&nbsp;razoavelmente necess&aacute;rios&nbsp;e esperados&nbsp;de algu&eacute;m que contrata os&nbsp;servi&ccedil;os&nbsp;proporcionados&nbsp;pela Plataforma.<br />
+<br />
+O&nbsp;Usu&aacute;rio&nbsp;concorda&nbsp;que&nbsp;a Captamos&nbsp;n&atilde;o responder&aacute; por&nbsp;quaisquer danos&nbsp;ou preju&iacute;zos causados&nbsp;em&nbsp;seu(s)&nbsp;aparelho(s)&nbsp;celular(es), computador(es)&nbsp;ou qualquer outro equipamento eletr&ocirc;nico,&nbsp;como&nbsp;resultado do uso da Plataforma.<br />
+<br />
+A&nbsp;Captamos&nbsp;n&atilde;o&nbsp;se&nbsp;responsabiliza por&nbsp;qualquer&nbsp;dano, preju&iacute;zo ou perda sofridos&nbsp;pelo Usu&aacute;rio&nbsp;em&nbsp;raz&atilde;o&nbsp;de&nbsp;falhas&nbsp;em&nbsp;sua conex&atilde;o com&nbsp;a internet, com o seu provedor, no sistema&nbsp;operacional&nbsp;ou&nbsp;servidor&nbsp;utilizados&nbsp;pelo Usu&aacute;rio, decorrentes&nbsp;de condutas&nbsp;de terceiros,&nbsp;caso&nbsp;fortuito&nbsp;ou&nbsp;for&ccedil;a maior.<br />
+<br />
+A&nbsp;Captamos&nbsp;tamb&eacute;m&nbsp;n&atilde;o&nbsp;ser&aacute; respons&aacute;vel por&nbsp;qualquer&nbsp;v&iacute;rus, trojan, malware, spyware ou qualquer&nbsp;software&nbsp;que&nbsp;possa danificar, alterar&nbsp;as&nbsp;configura&ccedil;&otilde;es&nbsp;ou infiltrar o equipamento do&nbsp;Usu&aacute;rio&nbsp;em&nbsp;decorr&ecirc;ncia do acesso, da utiliza&ccedil;&atilde;o ou da navega&ccedil;&atilde;o na internet, ou, ainda, como&nbsp;consequ&ecirc;ncia&nbsp;da&nbsp;transfer&ecirc;ncia de quaisquer&nbsp;dados&nbsp;e informa&ccedil;&otilde;es.<br />
+<br />
+<strong>PROPRIEDADE&nbsp;INTELECTUAL</strong><br />
+<br />
+Ao&nbsp;incluir&nbsp;textos,&nbsp;imagens ou fotografias&nbsp;na Plataforma, o Usu&aacute;rio autoriza a Captamos&nbsp;a utilizar&nbsp;tais&nbsp;imagens&nbsp;ou&nbsp;fotografias&nbsp;em&nbsp;pe&ccedil;as&nbsp;publicit&aacute;ria, cedendo o seu uso de forma irrestrita,&nbsp;n&atilde;o&nbsp;onerosa&nbsp;e&nbsp;por&nbsp;prazo indeterminado. O Usu&aacute;rio tamb&eacute;m autoriza a Captamos&nbsp;a alterar&nbsp;as&nbsp;imagens&nbsp;ou&nbsp;fotografias, inclusive, mas&nbsp;n&atilde;o se limitando a, a cor, a resolu&ccedil;&atilde;o, a composi&ccedil;&atilde;o&nbsp;e&nbsp;o&nbsp;tamanho de tais&nbsp;imagens&nbsp;ou fotografias.<br />
+<br />
+A&nbsp;Captamos&nbsp;poder&aacute;&nbsp;retirar&nbsp;da Plataforma publica&ccedil;&otilde;es&nbsp;que contenham imagens&nbsp;ou informa&ccedil;&otilde;es&nbsp;que&nbsp;n&atilde;o&nbsp;estejam&nbsp;de acordo com&nbsp;os&nbsp;Termos&nbsp;e as&nbsp;demais&nbsp;pol&iacute;ticas&nbsp;de utiliza&ccedil;&atilde;o da&nbsp;Plataforma.<br />
+<br />
+<strong>VIOLA&Ccedil;&Atilde;O&nbsp;DO&nbsp;SISTEMA OU DA BASE&nbsp;DE&nbsp;DADOS</strong><br />
+<br />
+&Eacute;&nbsp;vedada&nbsp;a&nbsp;utiliza&ccedil;&atilde;o&nbsp;de&nbsp;dispositivo, software ou outro recurso que possa interferir nas atividades&nbsp;e&nbsp;nas&nbsp;opera&ccedil;&otilde;es&nbsp;da Captamos, bem&nbsp;como nas&nbsp;contas&nbsp;ou em seus&nbsp;bancos&nbsp;de dados.&nbsp;Qualquer&nbsp;intromiss&atilde;o, tentativa de, ou atividade que viole ou contrarie as&nbsp;leis&nbsp;de direito&nbsp;de&nbsp;propriedade&nbsp;intelectual e as&nbsp;proibi&ccedil;&otilde;es&nbsp;estipuladas&nbsp;nestes&nbsp;Termos&nbsp;tornar&aacute; o respons&aacute;vel&nbsp;pass&iacute;vel&nbsp;de&nbsp;sofrer&nbsp;os&nbsp;efeitos&nbsp;das&nbsp;a&ccedil;&otilde;es&nbsp;legais&nbsp;pertinentes, bem como das san&ccedil;&otilde;es&nbsp;aqui&nbsp;previstas,&nbsp;sendo ainda respons&aacute;vel por&nbsp;indenizar&nbsp;a Captamos&nbsp;ou seus Usu&aacute;rios&nbsp;por&nbsp;eventuais&nbsp;danos&nbsp;causados.<br />
+<br />
+<strong>POL&Iacute;TICA&nbsp;DE&nbsp;PRIVACIDADE</strong><br />
+<br />
+Ao&nbsp;aceitar&nbsp;estes&nbsp;Termos,&nbsp;o Usu&aacute;rio permite que a Captamos&nbsp;colete, armazene, utilize e, a seu&nbsp;crit&eacute;rio&nbsp;exclusivo,&nbsp;transmita ou disponibilize a terceiros&nbsp;os&nbsp;dados&nbsp;e informa&ccedil;&otilde;es&nbsp;por ele fornecidos&nbsp;no&nbsp;momento&nbsp;do cadastro na Plataforma, bem&nbsp;como os&nbsp;decorrentes&nbsp;do uso da Plataforma,&nbsp;incluindo,&nbsp;mas&nbsp;n&atilde;o se limitando a, o nome completo, endere&ccedil;o, n&uacute;mero de telefone,&nbsp;localiza&ccedil;&atilde;o&nbsp;do&nbsp;Usu&aacute;rio, dentre outros.<br />
+<br />
+O&nbsp;Usu&aacute;rio&nbsp;permite&nbsp;que&nbsp;a&nbsp;Captamos&nbsp;utilize e divulgue dados&nbsp;pessoais&nbsp;e informa&ccedil;&otilde;es relativas&nbsp;aos&nbsp;servi&ccedil;os&nbsp;da&nbsp;Plataforma, para quaisquer&nbsp;finalidades, incluindo, mas&nbsp;n&atilde;o se limitando&nbsp;a,&nbsp;fins&nbsp;publicit&aacute;rios, informativos, educativos&nbsp;e jornal&iacute;sticos, an&aacute;lises, estudos, elabora&ccedil;&atilde;o&nbsp;de&nbsp;relat&oacute;rios&nbsp;e concess&atilde;o de informa&ccedil;&otilde;es&nbsp;aos&nbsp;Poderes&nbsp;P&uacute;blicos.<br />
+<br />
+A&nbsp;Captamos,&nbsp;por&nbsp;motivos&nbsp;legais, poder&aacute; manter&nbsp;em&nbsp;seu banco de dados&nbsp;todas&nbsp;as informa&ccedil;&otilde;es&nbsp;coletadas&nbsp;dos&nbsp;Usu&aacute;rios&nbsp;que exclu&iacute;rem&nbsp;seus&nbsp;cadastros.<br />
+<br />
+A&nbsp;Captamos&nbsp;implementa&nbsp;medidas&nbsp;que considera apropriadas&nbsp;para proteger e ajudar a evitar o&nbsp;acesso,&nbsp;a&nbsp;altera&ccedil;&atilde;o,&nbsp;divulga&ccedil;&atilde;o ou destrui&ccedil;&atilde;o sem&nbsp;autoriza&ccedil;&atilde;o das&nbsp;informa&ccedil;&otilde;es&nbsp;do Usu&aacute;rio&nbsp;coletadas&nbsp;por&nbsp;meio da Plataforma, incluindo armazenamento criptografado, utiliza&ccedil;&atilde;o&nbsp;de&nbsp;servidores&nbsp;ou meios&nbsp;magn&eacute;ticos&nbsp;de alta seguran&ccedil;a e pol&iacute;ticas&nbsp;e mecanismos de&nbsp;restri&ccedil;&atilde;o&nbsp;de&nbsp;acesso&nbsp;e&nbsp;de localidade. No entanto, a Captamos&nbsp;n&atilde;o se responsabiliza pelo uso&nbsp;indevido,&nbsp;por&nbsp;terceiros, das&nbsp;informa&ccedil;&otilde;es&nbsp;fornecidas&nbsp;pelo Usu&aacute;rio.<br />
+<br />
+Caso&nbsp;o&nbsp;Usu&aacute;rio&nbsp;considere ter&nbsp;suas&nbsp;informa&ccedil;&otilde;es&nbsp;utilizadas&nbsp;indevidamente por terceiros&nbsp;e em desacordo&nbsp;com&nbsp;os&nbsp;presentes&nbsp;Termos, este dever&aacute; entrar&nbsp;em&nbsp;contato com a Captamos&nbsp;por meio&nbsp;dos&nbsp;seguintes&nbsp;canais&nbsp;de comunica&ccedil;&atilde;o: coordenacao@captamos.org.br. Neste caso, a Captamos&nbsp;analisar&aacute;&nbsp;a&nbsp;reclama&ccedil;&atilde;o e tomar&aacute; as&nbsp;medidas&nbsp;que considerar cab&iacute;veis.<br />
+<br />
+A&nbsp;Captamos&nbsp;n&atilde;o&nbsp;ser&aacute;&nbsp;respons&aacute;vel por&nbsp;preju&iacute;zo que possa ser&nbsp;derivado da viola&ccedil;&atilde;o dessas medidas&nbsp;por&nbsp;parte&nbsp;de&nbsp;terceiros&nbsp;que se utilizem&nbsp;de meios&nbsp;indevidos, fraudulentos&nbsp;ou ilegais para&nbsp;acessar&nbsp;as&nbsp;informa&ccedil;&otilde;es&nbsp;armazenadas&nbsp;nos&nbsp;servidores&nbsp;ou nos&nbsp;bancos&nbsp;de dados utilizados&nbsp;pela&nbsp;Captamos.<br />
+<br />
+A&nbsp;Captamos&nbsp;n&atilde;o&nbsp;ser&aacute;&nbsp;respons&aacute;vel por&nbsp;quaisquer&nbsp;perdas&nbsp;de dados&nbsp;do Usu&aacute;rio, inclusive decorrentes&nbsp;de&nbsp;caso&nbsp;fortuito, for&ccedil;a maior, ocorridas&nbsp;em&nbsp;virtude de quebra de seguran&ccedil;a e acesso&nbsp;&agrave;&nbsp;Plataforma&nbsp;por&nbsp;parte de terceiros&nbsp;n&atilde;o autorizados.<br />
+<br />
+O&nbsp;login&nbsp;e&nbsp;a&nbsp;senha&nbsp;de&nbsp;cada Usu&aacute;rio servem&nbsp;para garantir&nbsp;a sua privacidade e seguran&ccedil;a. A Captamos&nbsp;recomenda&nbsp;aos&nbsp;seus&nbsp;Usu&aacute;rios&nbsp;que n&atilde;o compartilhem essas&nbsp;informa&ccedil;&otilde;es&nbsp;com ningu&eacute;m.&nbsp;A&nbsp;Captamos&nbsp;n&atilde;o se responsabiliza por&nbsp;danos&nbsp;ou preju&iacute;zos&nbsp;causados&nbsp;ao Usu&aacute;rio pelo&nbsp;compartilhamento&nbsp;dessas&nbsp;informa&ccedil;&otilde;es.<br />
+<br />
+Toda&nbsp;informa&ccedil;&atilde;o&nbsp;prestada pelos&nbsp;Usu&aacute;rios&nbsp;&agrave; Captamos&nbsp;&eacute; protegida por empresas especializadas&nbsp;e&nbsp;todas&nbsp;as&nbsp;informa&ccedil;&otilde;es&nbsp;coletadas&nbsp;por&nbsp;meio da Plataforma s&atilde;o armazenadas em&nbsp;ambientes&nbsp;seguros&nbsp;e&nbsp;de acesso restrito.<br />
+<br />
+A&nbsp;Captamos&nbsp;segue&nbsp;os&nbsp;padr&otilde;es&nbsp;de seguran&ccedil;a comumente utilizados&nbsp;pelas&nbsp;empresas&nbsp;que trabalham&nbsp;com&nbsp;transmiss&atilde;o e reten&ccedil;&atilde;o de dados&nbsp;para garantir&nbsp;a seguran&ccedil;a de seus Usu&aacute;rios. No&nbsp;entanto,&nbsp;nenhum&nbsp;m&eacute;todo de transmiss&atilde;o ou reten&ccedil;&atilde;o de dados&nbsp;eletr&ocirc;nicos&nbsp;&eacute; plenamente&nbsp;seguro&nbsp;e&nbsp;todos&nbsp;podem&nbsp;estar&nbsp;sujeitos&nbsp;a ataques&nbsp;externos. Assim, apesar de utilizar&nbsp;todos&nbsp;os&nbsp;meios&nbsp;poss&iacute;veis&nbsp;e adequados, a Captamos&nbsp;n&atilde;o pode garantir a absoluta seguran&ccedil;a&nbsp;das&nbsp;informa&ccedil;&otilde;es&nbsp;prestadas&nbsp;na internet.<br />
+<br />
+O&nbsp;nome,&nbsp;e&shy;mail,&nbsp;telefone e outros&nbsp;dados&nbsp;dos&nbsp;Usu&aacute;rios&nbsp;poder&atilde;o ser utilizados&nbsp;para o envio de&nbsp;notifica&ccedil;&otilde;es,&nbsp;informa&ccedil;&otilde;es&nbsp;sobre a conta, avisos&nbsp;sobre viola&ccedil;&otilde;es&nbsp;aos&nbsp;Termos, materiais publicit&aacute;rios&nbsp;ou&nbsp;promocionais&nbsp;e outras&nbsp;comunica&ccedil;&otilde;es&nbsp;que a Captamos&nbsp;considerar &uacute;teis&nbsp;ou necess&aacute;rias.&nbsp;Os&nbsp;Usu&aacute;rios poder&atilde;o requisitar&nbsp;a Captamos&nbsp;a sua exclus&atilde;o de sua lista de envio&nbsp;de&nbsp;mensagens&nbsp;(mailing).<br />
+<br />
+A&nbsp;Captamos&nbsp;prestar&aacute;&nbsp;todas&nbsp;as&nbsp;informa&ccedil;&otilde;es&nbsp;requisitadas&nbsp;por&nbsp;&oacute;rg&atilde;os&nbsp;p&uacute;blicos, desde que devidamente&nbsp;justificadas e compat&iacute;veis&nbsp;com&nbsp;a lei em&nbsp;vigor. A&nbsp;Captamos&nbsp;utiliza&nbsp;cookies&nbsp;e softwares&nbsp;de monitoramento para prover aos&nbsp;seus&nbsp;Usu&aacute;rios&nbsp;a melhor&nbsp;navega&ccedil;&atilde;o&nbsp;poss&iacute;vel, com&nbsp;base em&nbsp;suas&nbsp;necessidades, bem como para pesquisas internas.&nbsp;Esses&nbsp;cookies&nbsp;n&atilde;o coletam&nbsp;informa&ccedil;&otilde;es&nbsp;pessoais, apenas&nbsp;informam prefer&ecirc;ncias de&nbsp;uso&nbsp;e&nbsp;de&nbsp;navega&ccedil;&atilde;o&nbsp;de cada Usu&aacute;rio, al&eacute;m&nbsp;de prover&nbsp;&agrave; Captamos&nbsp;estat&iacute;sticas&nbsp;e dados para&nbsp;aprimorar&nbsp;os&nbsp;seus&nbsp;servi&ccedil;os.<br />
+<br />
+<strong>DISPOSI&Ccedil;&Otilde;ES&nbsp;GERAIS</strong><br />
+<br />
+Este&nbsp;Termo&nbsp;n&atilde;o&nbsp;implica&nbsp;ou significa, de nenhuma forma, nenhum contrato de sociedade, mandato,&nbsp;intermedia&ccedil;&atilde;o, presta&ccedil;&atilde;o de servi&ccedil;os&nbsp;ou rela&ccedil;&atilde;o de trabalho entre a Captamos&nbsp;e o&nbsp;Usu&aacute;rio.<br />
+<br />
+A&nbsp;Captamos&nbsp;se&nbsp;reserva&nbsp;o direito de, a qualquer&nbsp;momento e a seu exclusivo crit&eacute;rio, solicitar o&nbsp;envio&nbsp;de&nbsp;documenta&ccedil;&atilde;o pessoal ou de qualquer&nbsp;documento que comprove a veracidade das&nbsp;informa&ccedil;&otilde;es&nbsp;cadastrais. Os&nbsp;presentes&nbsp;Termos&nbsp;podem&nbsp;ser&nbsp;modificados&nbsp;pela Captamos&nbsp;a qualquer tempo e a seu &uacute;nico&nbsp;e&nbsp;exclusivo&nbsp;crit&eacute;rio.<br />
+<br />
+Os&nbsp;novos&nbsp;Termos&nbsp;entrar&atilde;o em&nbsp;vigor&nbsp;10 (dez) dias&nbsp;ap&oacute;s&nbsp;a publica&ccedil;&atilde;o&nbsp;na&nbsp;Plataforma. No prazo de 5 (cinco)&nbsp;dias&nbsp;contados&nbsp;a partir da publica&ccedil;&atilde;o, o Usu&aacute;rio&nbsp;dever&aacute;&nbsp;manifestar, por&nbsp;meio do canal de comunica&ccedil;&atilde;o fornecido pela Plataforma, sua&nbsp;discord&acirc;ncia,&nbsp;caso&nbsp;n&atilde;o concorde com&nbsp;os&nbsp;termos&nbsp;alterados. Nesse caso, o v&iacute;nculo contratual&nbsp;deixar&aacute;&nbsp;de&nbsp;existir, desde que n&atilde;o haja valores&nbsp;em&nbsp;aberto. N&atilde;o havendo manifesta&ccedil;&atilde;o&nbsp;no&nbsp;prazo&nbsp;estipulado, entender&shy;se&shy;&aacute; que o Usu&aacute;rio aceitou tacitamente os novos&nbsp;Termos,&nbsp;que&nbsp;continuar&atilde;o vinculando as&nbsp;partes.<br />
+<br />
+Ao&nbsp;cadastrar&shy;-se&nbsp;como&nbsp;Usu&aacute;rio na Plataforma e aceitar&nbsp;eletronicamente os&nbsp;presentes Termos,&nbsp;por&nbsp;meio&nbsp;do&nbsp;clique no bot&atilde;o &ldquo;Aceito os&nbsp;Termos&nbsp;de Uso&rdquo;, o Usu&aacute;rio declara automaticamente&nbsp;e&nbsp;incondicionalmente estar&nbsp;de acordo com&nbsp;estes&nbsp;Termos&nbsp;e todas&nbsp;as demais&nbsp;pol&iacute;ticas&nbsp;e&nbsp;regras&nbsp;disponibilizadas&nbsp;na Plataforma.<br />
+<br />
+Caso&nbsp;qualquer&nbsp;cl&aacute;usula,&nbsp;disposi&ccedil;&atilde;o, obriga&ccedil;&atilde;o ou restri&ccedil;&atilde;o destes&nbsp;Termos&nbsp;seja, por ju&iacute;zo competente&nbsp;ou&nbsp;outra&nbsp;autoridade, considerada inv&aacute;lida, nula ou inexequ&iacute;vel, todos&nbsp;os&nbsp;demais termos,&nbsp;disposi&ccedil;&otilde;es,&nbsp;obriga&ccedil;&otilde;es&nbsp;e restri&ccedil;&otilde;es&nbsp;dever&atilde;o permanecer em pleno vigor e efeito, n&atilde;o&nbsp;podendo&nbsp;ser&nbsp;de&nbsp;forma nenhuma afetados, prejudicados&nbsp;ou invalidados.<br />
+<br />
+A&nbsp;aceita&ccedil;&atilde;o&nbsp;por&nbsp;qualquer uma das&nbsp;partes&nbsp;com&nbsp;rela&ccedil;&atilde;o a qualquer viola&ccedil;&atilde;o dos&nbsp;presentes Termos&nbsp;ou&nbsp;sua&nbsp;omiss&atilde;o&nbsp;no exerc&iacute;cio de qualquer&nbsp;direito outorgado pelos&nbsp;mesmos, n&atilde;o ser&aacute; considerado&nbsp;como&nbsp;nova&ccedil;&atilde;o ou ren&uacute;ncia em&nbsp;rela&ccedil;&atilde;o a qualquer&nbsp;viola&ccedil;&atilde;o futura, seja semelhante&nbsp;ou&nbsp;n&atilde;o,&nbsp;ou&nbsp;ao exerc&iacute;cio por&nbsp;qualquer&nbsp;uma das&nbsp;partes&nbsp;de qualquer direito futuro conferido&nbsp;por&nbsp;estes&nbsp;Termos.<br />
+<br />
+Todos&nbsp;os&nbsp;itens&nbsp;destes&nbsp;Termos&nbsp;s&atilde;o regidos&nbsp;pelas&nbsp;leis&nbsp;vigentes&nbsp;na Rep&uacute;blica Federativa do Brasil.&nbsp;Para&nbsp;todos&nbsp;os&nbsp;assuntos&nbsp;referentes&nbsp;&agrave; interpreta&ccedil;&atilde;o, ao cumprimento ou a qualquer outro&nbsp;questionamento&nbsp;relacionado a estes&nbsp;Termos, as&nbsp;partes&nbsp;concordam em se submeter ao Foro&nbsp;da&nbsp;Comarca&nbsp;de&nbsp;S&atilde;o Paulo, Estado de S&atilde;o Paulo.<br />
+<br />
+Quaisquer&nbsp;d&uacute;vidas,&nbsp;sugest&otilde;es&nbsp;ou reclama&ccedil;&otilde;es&nbsp;a respeito dos&nbsp;presentes&nbsp;Termos&nbsp;e Condi&ccedil;&otilde;es&nbsp;Gerais&nbsp;de&nbsp;Uso&nbsp;poder&atilde;o ser&nbsp;dirigidas&nbsp;ao seguinte e&shy;mail: <a href="mailto:coordenacao@captamos.org.br?subject=Termos%20e%20Condi%C3%A7%C3%B5es%20de%20Uso">coordenacao@captamos.org.br</a><br />
+&nbsp;												</div>
+											</div>
+
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+		</div>
+
+<script>
+var channelURL = '/collab/';
+</script>
+
+		<footer>
+			<div class="container">
+				<div class="col-xs-2">
+					<a class="navbar-brand" href="termos.html#">
+						<img src="assets/images/twh-logo.png" class="img-responsive">
+					</a>
+					<ul class="list-unstyled ul-redes">
+						<li><a href="https://www.facebook.com/captamosbr" target="_blank"><img src="assets/images/ico-fb.png" alt=""></a></li>
+						<li><a href="https://www.twitter.com/captamosbr" target="_blank"><img src="assets/images/ico-tw.png" alt=""></a></li>
+					</ul>
+				</div>
+				<div class="col-xs-offset-1 col-xs-3 col">
+					<p>INSPIRE-SE</p>
+					<ul class="list-unstyled">
+						<li><a href="news/tendencias.html">Novidades e Tendências</a></li>
+						<li><a href="news/cases.html">Histórias e Cases</a></li>
+						<li><a href="news/articles.html">Artigos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-3 col">
+					<p>APRENDA</p>
+					<ul class="list-unstyled">
+						<li><a href="learn/programs.html">Cursos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-3 col">
+					<p>COMPARTILHE</p>
+					<ul class="list-unstyled">
+						<li><a href="collab/feed.html">Feed</a></li>
+						<li><a href="collab/questions.html">Perguntas e Respostas</a></li>
+						<li><a href="collab/tips.html">Dicas</a></li>
+						<li><a href="collab/files.html">Arquivos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-3 col">
+					<p>SOBRE NÓS</p>
+					<ul class="list-unstyled">
+						<li><a href="sobrenos.html">Sobre nós</a></li>
+						<li><a href="termos.html#" class="lnkContacto">Contato</a></li>
+						<li><a href="faq.html">Perguntas Frequentes</a></li>
+						<li><a href="termos.html">Termos e Condições de Uso</a></li>
+						<li><a href="https://www.facebook.com/captamosbr" target="_blank">Facebook</a></li>
+						<li><a href="https://www.twitter.com/captamosbr" target="_blank">Twitter</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+
+
+		<script>var current_section = "";</script>
+
+		<!-- -->
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<!-- Plugins -->
+		<script src="assets/vendor/malihu/jquery.mCustomScrollbar.min.js"></script>
+		<!--  -->
+		<script>
+		var baseURL = '/';
+		var currentURL = '/termos';
+		</script>
+		<script src="assets/js/plugins/jquery.elastic.js"></script>
+		<script src="assets/js/plugins/jquery.events.input.js"></script>
+		<script src="assets/js/plugins.js"></script>
+		<script src="assets/js/moment.js"></script>
+		<script src="assets/js/bootstrap-datetimepicker.js"></script>
+		<script src="assets/js/plugins/jquery.scrollto.min.js"></script>
+		<script src="assets/js/locales/pt-br.js"></script>
+		<script src="assets/js/bootbox.min.js"></script>
+		<script>
+		var lang = new Array();
+		lang['Cambiar imagen de perfil'] = 'Trocar imagem de perfil';
+		lang['Cambiar imagen de portada'] = 'Trocar imagem de capa';
+		var reqlogin = 'reqlogin';
+
+		$(document).ready(function(){
+
+		});
+		</script>
+
+		<script src="assets/js/plugins/jMentions.min.js"></script>
+
+		<script type="text/javascript" src="assets/js/plugins/owl.carousel.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="assets/js/plugins/jquery.swipebox.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="assets/js/plugins/jquery-ui.js" charset="UTF-8"></script>
+<script type="text/javascript" src="assets/js/plugins/underscore.js" charset="UTF-8"></script>
+<script type="text/javascript" src="assets/js/plugins/jquery.mentions.js" charset="UTF-8"></script>
+<script type="text/javascript" src="assets/js/modules/collab/feed.js" charset="UTF-8"></script>
+<script type="text/javascript" src="assets/js/modules/collab/questions.js" charset="UTF-8"></script>
+<script type="text/javascript" src="assets/js/plugins/jquery.liveurl.js" charset="UTF-8"></script>
+<script type="text/javascript" src="assets/js/modules/collab/dom.js" charset="UTF-8"></script>
+
+		<script src="assets/js/main.js"></script>
+
+		<a href="termos.html#" class="restorePass" data-code="" style="display:none;"></a>
+
+
+		<script>
+		  window.addEventListener('load', function() {
+			jQuery('body').on('click', ' .row .col-xs-16 a.btn-login:contains("entrar")', function() {
+			  jQuery('body').append('<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/842694596/?label=WqO-CLPhhXQQxP_pkQM&amp;guid=ON&amp;script=0"/>');
+			})
+		  })
+
+		</script>
+
+		<script>
+		  window.addEventListener('load', function() {
+			jQuery('body').on('click', ' .row .col-xs-16 a.btn-signup:contains("criar uma conta")', function() { jQuery('body').append('<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/842694596/?label=WqO-CLPhhXQQxP_pkQM&amp;guid=ON&amp;script=0"/>');
+			})
+		  })
+
+		</script>
+
+	</body>
+</html>
